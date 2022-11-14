@@ -1,0 +1,200 @@
+/*------------ Variables Css---------- */
+
+/* typography */
+:root {
+    --body-font: 'Roboto','Verdana',sans-serif;
+  }
+  /* colors */
+  :root {
+    --dark-color: #000000;
+    --paragraf-color:#333B41;
+    --light-color: #fff;
+    --accent-color:#FE9013;
+    --light-bg-color:#E5E5E5;
+    --footer-bg-color:#111115;
+    --socials-bg-color:rgba(196, 196, 196, 0.5);
+    --testimonial-cards-bg-color:#F1F3F2;
+    --btn-hover-color: #E47209;
+    --btn--active-color:#4B9200;
+    --btn--disabled-color: #767474;
+  }
+/*--------- BASE ---------------*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+ body{
+    font-family: var(--body-font);
+    font-size:1rem;
+    width: 100%;
+    min-height: 100vh;
+    color: var(--dark-color);
+ }
+ .container{
+    min-height: 100vh;
+    max-width: 1160px;
+    margin: 0 auto;
+ }
+ h2{
+font-weight: 400;
+font-size: 48px;
+line-height: 120%;
+font-style: normal;
+ }
+ h3{
+font-weight: 400;
+font-size: 36px;
+line-height: 130%;
+font-style: normal;
+ }
+ /* subtitle */
+h4{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    font-style: normal;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    font-family: var(--body-font);
+}
+p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    font-style: normal;
+}
+a{ text-decoration: none;}
+li{
+    list-style-type: none;
+}
+ul{
+    list-style: none;
+}
+button{
+    font-family: var(--body-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+    padding: 16px 0;
+    width: 298px;
+    color: var(--light-color);
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border: none;
+    text-align: center;
+    font-style: normal;
+    cursor: pointer;
+}
+button:hover{
+  background: #E47209 ;
+}
+
+/*----------- CSS Classes--------- */
+ .rounded_btn{
+  border-radius: 25px;
+}
+.rounded_btn:hover{
+  background: #E47209;
+  color: white;
+}
+.square_btn{
+  border-radius: 5px;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  font-family: var(--body-font);
+font-weight: 500;
+line-height: 140%;
+text-transform: uppercase;
+font-style: normal;
+color: var(--light-color);
+}
+.square_btn:hover{
+  background-color: #E47209;
+}
+.subtitle{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  font-style: normal;
+}
+
+/*---------- LAYOUT---------- */
+/* ----------HEADER, LOGO AND NAV-------------- */
+.header{
+  position: relative;
+  background-color: var(--dark-color);
+  max-height:80px;
+  z-index: 10;
+}
+.header__content{
+height:80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo{
+  border: 1px solid var(--light-color);
+  border-radius: 2px;
+  text-align: center;
+}
+.header__logo a{
+  color: var(--light-color);
+}
+.logo__link h1{
+font-family: var(--body-font);
+font-size: 1.188rem;
+max-width: 72.49px;
+font-weight: 400;
+line-height: 120%;
+color: var(--light-color);
+margin:3.55px 4.75px;
+cursor: pointer;
+}
+.logo__link h1:hover{
+  color: var(--accent-color);
+}
+.logo__link h1 .o-letter{
+  position: relative;
+}
+.logo__link h1 .o-letter::before{
+  content: url(../../assets/icons/header-hero/bamboo.svg);
+  position: absolute;
+  right: 4px;
+  bottom:0;
+}
+.header__logo-nav{
+  max-height:80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 63px;
+}
+.header__menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 58px;
+}
+.header__menu a:hover,.nav__designer a:hover{
+color: var(--accent-color);
+text-decoration: underline;
+text-decoration-thickness: 2px;
+text-decoration-color: var(--light-color);
+text-underline-offset: 10px;
+}
+.header__link,.nav__designer a{
+  font-family: var(--body-font);
+  color:var(--light-color);
+  font-size:1rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%;
+}
+.active{
+  color: #E47209;
+}
