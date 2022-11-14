@@ -37,7 +37,6 @@ html {
     color: var(--dark-color);
  }
  .container{
-    min-height: 100vh;
     max-width: 1160px;
     margin: 0 auto;
  }
@@ -511,4 +510,254 @@ text-underline-offset: 10px;
       text-transform: uppercase;
       text-align: center;
       font-style: normal;
+    }
+    /*--------------------- TESTIMONIALS SECTION-------------------- */
+  .testimonials{
+    background-color: var(--light-bg-color);
+    height: 842px;
+    position: relative;
+    z-index: 5;
+  }
+  .testimonials::after{
+    content: url(../../assets/images/testimonial-footer/leav_foto.png);
+    position: absolute;
+    top: 60%;
+    right: 0;
+    z-index: -1;
+  }
+  .testimonials__content{
+    display: flex;
+    flex-direction: column;
+    height: 842px;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonials__content h3{
+    margin-top: 38px;
+  }
+  .testimonials__cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .testimonials__card{
+    width: 266px;
+    height: 391px;
+    background-color:#F1F3F2;
+    padding: 15px 16px 20px 15px;
+    overflow: hidden;
+    border-radius: 20px;
+    background:linear-gradient(#F1F3F2,#F1F3F2) padding-box,
+    linear-gradient(to left,rgba(254, 189, 171, 0.74) 74%,rgba(243, 169, 248, 0.66) 66%,rgba(224, 216, 240, 1)100%,rgba(234, 247, 254, 1) 100%,rgba(234, 247, 254, 1)100%) border-box;
+    border: 2px solid transparent;
+    margin: 47px 0 21px 0;
+  }
+  .testimonials__card:hover{
+    border: 4px solid transparent;
+  }
+  .testimonials__header{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  .testimonials__header img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  .user_info{
+    display: flex;
+  }
+  .user_name{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--dark-color);
+  }
+  .user_data{
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 120%;
+  font-style: normal;
+  color:#BDBDBD;
+  }
+  .testimonials__teastimonial p{
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 120%;
+  color: #767474;
+  }
+  .testimonials__teastimonial:last-child{
+    padding-bottom: 20px;
+  }
+  .testimonial__button{
+  align-self: flex-start;
+  margin-bottom: 100px;
+  }
+  .range{
+    height: 8px;
+    width: 600px;
+    background-color:
+    #F5F7F6;
+    position: relative;
+    background:linear-gradient(#F1F3F2,#F1F3F2) padding-box,
+    linear-gradient(to left,rgba(254, 189, 171, 0.74) 74%,rgba(243, 169, 248, 0.66) 66%,rgba(224, 216, 240, 1)100%,rgba(234, 247, 254, 1) 100%,rgba(234, 247, 254, 1)100%) border-box;
+    border: 0.5px solid transparent;
+    border-radius: 5px;
+    margin-bottom: 31px;
+  }
+  input[type=range]{
+    -webkit-appearance: none;
+    border-radius: 5px;
+    width: 115.19px;
+    height: 6px;
+    background-color:  #FE9013;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+  }
+  input[type=range]:hover {
+  width:20px;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    display: none;
+  }
+  /*--------------- FOOTER---------------- */
+.footer{
+    height: 443px;
+    background-color: var(--footer-bg-color);
+    }
+    .footer__content{
+      height: 443px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer__logo{
+      text-align: center;
+      width: 72.49px;
+      border: 1.19px solid var(--light-color);
+      border-radius: 2px;
+      margin-bottom: 74.55px;
+    }
+    .footer__logo-link{
+      color: var(--light-color);
+    }
+    .footer__logo p{
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: 400;
+    width: 75px;
+    font-weight: 400;
+    line-height: 120%;
+    color: var(--light-color);
+    padding:3.55px 4.75px;
+    }
+    .footer__logo p:hover{
+      color: #E47209;
+    }
+    .footer__logo p .o-letter{
+      position: relative;
+    }
+    .footer__logo p .o-letter::before{
+      content: url(../../assets/icons/header-hero/bamboo.svg);
+      position: absolute;
+      right:45px;
+      bottom:0;
+    }
+    .footer__button{
+      margin-bottom: 44px;
+    }
+    .footer__button a{
+      color: var(--light-color);
+      padding: 16px 20px;
+      width: 298px;
+      font: 400;
+      font-size: 16px;
+    }
+    .button__donate:hover{
+    background:  #E47209;;
+    }
+    .footer__icons{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer__icons img{
+      background-color: var(--socials-bg-color);
+     border-radius: 50%;
+     object-fit: cover;
+    }
+    .footer__icons img:hover{
+      background-color: #4B9200;
+    }
+    .footer__icons a{
+      color: var(--light-color);
+      padding-right: 12px;
+    }
+    .footer__icons a:hover{
+    color: #4B9200;
+    }
+    .footer__icons img{
+    padding: 5px;
+    margin-right: 12px ;
+    }
+    .footer__middl{
+      align-self: flex-end;
+      padding-bottom: 45px;
+    }
+    .subscription{
+    height: 443px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 90px;
+    }
+    .subscription h5{
+      font-family:var(--body-font) ;
+    font-size: 24px;
+    color: var(--light-color);
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 15px;
+    }
+    input[type=email]{
+      background-color: transparent;
+      width: 228px;
+      border: 2px solid #D31414;
+      padding:10px;
+    }
+    input[type=email]:focus{
+    outline-color: #4B9200;
+    outline-width: 3px;
+    border: #4B9200 ;
+    color: white;
+    }
+    input[type=submit]{
+      width: 129px;
+      padding:10px;
+      background: #F1F3F2;
+      color: #D31414;
+      border: 1px solid  #D31414;
+    }
+    input::placeholder{
+      font-size: 16px;
+      line-height: 140%;
+      font-weight: 400;
+      color:#D31414;
+    }
+    input:focus::placeholder{
+      color:  #BDBDBD;;
+    }
+    .copyright a,.copyright p{
+      color: rgb(186, 177, 177);
+      font-size: 16px;
+      font-weight: 100;
+      line-height: 200%;
+    }
+    .copyright a:hover,.copyright p:hover{
+      color: var(--btn--active-color);
+      text-decoration: underline;
     }
