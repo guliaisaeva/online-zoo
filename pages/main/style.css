@@ -289,3 +289,226 @@ text-underline-offset: 10px;
       font-weight: 400;
       margin-top: 43px;
     }
+    /*---------------------- PET SECTION -------------------------*/
+   .pets{
+    height: 100%;
+    background-color: var(--light-bg-color);
+    position: relative;
+    }
+    .animal-cards__content{
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      justify-content: center;
+      align-items: center;
+      grid-row-gap: 20px;
+      grid-column-gap: 30px;
+    }
+    .animal-cards__content figcaption{
+      min-height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10px;
+    }
+    .animal-cards__content figcaption{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: var(--dark-color);
+    }
+    /* border liner gradinet */
+    .animal-cards__card{
+    background:linear-gradient(#fff,#fff) padding-box,
+    linear-gradient(to right,#FA6F32,#FE9013) border-box;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    }
+    .animal-cards__card:hover figcaption {
+    background: rgba(239, 235, 234, 0.74);
+    width: 100%;
+    height: 350px;
+    transition: all ease-in-out 1s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid  white;
+    border-radius: 50%;
+    align-items: center;
+    }
+    .animal-cards__card:hover img{
+    transition: all ease-in-out 1s;
+    transform: scale(1.1);
+    }
+    .animal-cards__card img{
+      border-radius: 5px;
+      width: 100%;
+    }
+    .animal-cards__content{
+      position: relative;
+      z-index: 5;
+    }
+    .animal-cards__slider-arrow {
+      position: absolute;
+      width: 62px;
+      height: 62px;
+      background-color: var(--accent-color);
+      border-radius: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: none;
+    }
+    .prev {
+      background-image: url(../../assets/icons/pets/nextArrow.svg);
+      top: 45%;
+      right: 1180px;
+    }
+    .next {
+      background-image: url(../../assets/icons/pets/prevArrow.svg);
+      top: 45%;
+      left: 1180px;
+    }
+    .animal-cards__slider-arrow:hover,
+    .prev:hover,
+    .next:hover {
+      background-color: var(--btn-hover-color);
+      cursor: pointer;
+    }
+    .arrow-active:active {
+      background-color: var(--btn--active-color);
+    }
+    .animal-cards__button{
+    text-align: center;
+    padding: 80px 0 100px 0;
+    }
+    .pets::before{
+      content: url(../../assets/images/animal-card/palm_foto.png);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+    .pets::after{
+      content: url(../../assets/images/animal-card/strelitzia-flower1.png);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+    }
+    /*------------------- SECTION PICK AND FEED ---------------------------------*/
+    .pick-and-feed{
+      height: 1004px;
+      background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+      opacity: 0.9;
+      position: relative;
+      z-index: 5;
+    }
+    .pick-and-feed .container{
+      height: 1004px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .pick-and-feed__content{
+      height: 835px;
+      background: rgba(253, 253, 255, 0.52);
+      backdrop-filter: blur(2px);
+      border-radius: 20px;
+      padding-left: 100px;
+      color: var(--paragraf-color);
+    }
+    .pick-and-feed__title{
+     color: var(--accent-color);
+     padding: 40px 0 30px 0;
+     padding-right: 47px;
+    }
+    .pick-and-feed__subtitle{
+      padding-bottom: 40px;
+      text-align: left;
+    }
+    .pick-and-feed__text{
+      line-height: 130%;
+      font-weight: 500;
+      text-align: left;
+      padding-bottom: 10px;
+    }
+    .pick-and-feed__text2{
+    font-weight: 400;
+    text-align: left;
+    padding-right: 198px;
+    }
+    .pick-and-feed__text2 a {
+      color:#333B41;
+      text-decoration: underline;
+      text-decoration-color: var(--accent-color);
+      text-underline-offset: 5px;
+    }
+    .how-it-works h3{
+    margin: 60px 0 40px 0;
+    }
+    .how-it-works__cards .cards{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+    .img-box{
+      display:grid;
+      place-items: center;
+      width:168px;
+      height: 168px;
+      background:linear-gradient(#fff,#fff) padding-box,
+      linear-gradient(to right,#FA6F32,#FE9013) border-box;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      margin-bottom:30px ;
+    }
+    .cards figure .img1{
+      width: 60px;
+      height: 108px;
+    }
+    .cards figure .img2{
+      width: 85.77px;
+      height: 95px;
+    }
+    .cards figure .img3{
+      width: 124.75px;
+      height: 71.6px;
+    }
+    .cards figure  figcaption{
+      width:168px;
+      height: 46px;
+     text-align: left;
+     color: var(--paragraf-color);
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 140%;
+     font-style: normal;
+    }
+    .how-it-works__button{
+      width: 100%;
+      padding: 16px 0;
+      width: 298px;
+     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+      border: none;
+      cursor: pointer;
+      border-radius: 25px;
+       margin: 60px auto;
+    }
+    .how-it-works__button:hover{
+      background: #E47209 ;
+      transform: scale(1.1);
+    }
+    .how-it-works__button a{
+      color: var(--light-color);
+      font-family: var(--body-font);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+      text-transform: uppercase;
+      text-align: center;
+      font-style: normal;
+    }
