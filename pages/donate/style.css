@@ -375,32 +375,9 @@ z-index: -1;
 	height: 15px;
   border: 1px solid  var(--accent-color);
 }
-
-
-
-/* .progress_bar__radio:before {
-  content: " ";
-  display: inline-block;
-  position: relative;
-  width: 10px;
-  height: 10px;
-  border-radius: 11px;
-  border: 5px solid  #FFEE2E;
-  background-color:  #FFEE2E;
-  z-index: 100;
-} */
-/* label:before .active {
-  content: " ";
-  display: inline-block;
-  position: relative;
-  width: 10px;
-  height: 10px;
-  border-radius: 11px;
-  border: 5px solid  #FFEE2E;
-  background-color:  red;
-  z-index: 100;
-} */
-
+input{
+  cursor: pointer;
+}
 
 
 .another-amount{
