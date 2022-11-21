@@ -1,23 +1,25 @@
-const radio=document.querySelectorAll("input[type=radio]");
+const radio=document.querySelectorAll(".amount");
 console.log(radio)
-const label=document.querySelectorAll("label");
+const label=document.querySelectorAll(".progress_bar__radio");
 console.log(label)
 
 
-// for (let index = 0; index < radio.length; index++) {
-//     const element = radio[index];
-//     element.addEventListener('change', function() {
+// radio.forEach(element=>{
+//     element.addEventListener('change', function(e) {
 //         if (this.checked) {
 //           console.log("radio is checked..");
-//           for (let index = 0; index < label.length; index++) {
-//             const lbl = label[index];
-//             lbl.style.color="green"
+//           for (let index = 0; index < element.length; index++) {
+//             const lbl = element[index];
+//             // if(lbl=="checked")
+//             lbl.style.color="green";
 //           }
 //         } else {
 //           console.log("radio is not checked..");
 //         }
 //       });
-// }
+// })
+
+
 
 
 

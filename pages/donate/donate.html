@@ -91,35 +91,36 @@
                                     <div class="progress_bar__radios">
                                         <span class="progress_bar__radios-line"></span>
                                         <label for="amount1" class="progress_bar__radio">
-                                            <input type="radio" name="amount" id="amount1" value="5000">
+                                            <input type="radio" name="amount" id="amount1" class="amount" value="5000">
                                             &#36;5000
                                         </label>
                                         <label for="amount2" class="progress_bar__radio">
-                                            <input type="radio" name="amount" id="amount2" value="2000">
+                                            <input type="radio" name="amount" id="amount2" class="amount" value="2000">
                                             &#36;2000
                                         </label>
                                         <label for="amount3" class="progress_bar__radio" style="color:#E47209">
-                                            <input type="radio" name="amount" id="amount3" value="1000">
+                                            <input type="radio" name="amount" id="amount3" class="amount" value="1000"
+                                                checked>
                                             &#36;1000
                                         </label>
                                         <label for="amount4" class="progress_bar__radio">
-                                            <input type="radio" name="amount" id="amount4" value="500">
+                                            <input type="radio" name="amount" id="amount4" class="amount" value="500">
                                             &#36;500
                                         </label>
                                         <label for="amount5" class="progress_bar__radio">
-                                            <input type="radio" name="amount" id="amount5" value="250">
+                                            <input type="radio" name="amount" id="amount5" class="amount" value="250">
                                             &#36;250
                                         </label>
                                         <label for="amount6" class="progress_bar__radio">
-                                            <input type="radio" name="amount" id="amount6" value="100">
+                                            <input type="radio" name="amount" id="amount6" class="amount" value="100">
                                             &#36;100
                                         </label>
                                         <label for="amount7" class="progress_bar__radio">
-                                            <input type="radio" name="amount" id="amount7" value="50">
+                                            <input type="radio" name="amount" id="amount7" class="amount" value="50">
                                             &#36;50
                                         </label>
                                         <label for="amount8" class="progress_bar__radio">
-                                            <input type="radio" name="amount" id="amount8" value="25">
+                                            <input type="radio" name="amount" id="amount8" class="amount" value="25">
                                             &#36;25
                                         </label>
                                     </div>
@@ -132,13 +133,15 @@
                                         placeholder="Another amount">
                                     <img class="dollar" src="../../assets/icons/donate/dollar.svg" alt="dollar icon">
                                 </div>
-                                <div class="radio-input"><label for="monthly"><input type="radio"
-                                            id="monthly">Monthly</label>
-                                    <label for="once"> <input type="radio" id="once">Once</label>
+                                <div class="radio-input">
+                                    <label for="monthly"><input type="radio" name="color" id="monthly"
+                                            class="another-radio">Monthly</label>
+                                    <label for="once"> <input type="radio" id="once" name="color" class="another-radio"
+                                            checked>Once</label>
                                 </div>
                             </form>
                         </div>
-                        <div class="donate-btn">
+                        <div class=" donate-btn">
                             <a href="../donate/donate.html" target="_blank" class="button rounded_btn">
                                 FEED A FRIEND NOW
                             </a>

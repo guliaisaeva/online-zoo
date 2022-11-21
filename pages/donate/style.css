@@ -302,7 +302,6 @@ margin: 20px 0 62px 0;
   .pick-and-feed__progress_bar{
   margin: 48px 0 50px 0;
 
-
   }
   .progress_bar{
   width: 976px;
@@ -328,6 +327,7 @@ legend{
   display: flex;
 justify-content: space-between;
 position: relative;
+padding-left: 30px;
 }
 
 .progress_bar__radio{
@@ -347,6 +347,7 @@ position: absolute;
 width: 915px;
 border: solid 2px #72828E;
 top: 22%;
+z-index: -1;
 }
 .progress_bar__radios::before{
   content: "";
@@ -354,17 +355,30 @@ top: 22%;
   height: 40px;
   background: #404950;
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
-  z-index: -1;
   border-radius: 5px;
+  z-index: -1;
 }
 
-input[type='radio'] {
-  display: none;
+.amount{
+  appearance: none;
+	width: 10px;
+	height: 10px;
+  background:#FFEE2E ;
+	border-radius: 50%;
+	background-clip: content-box;
+  position: relative;
+}
+.amount:checked {
+  width: 15px;
+	height: 15px;
+  border: 1px solid  var(--accent-color);
 }
 
- label:before {
+
+
+/* .progress_bar__radio:before {
   content: " ";
   display: inline-block;
   position: relative;
@@ -374,7 +388,7 @@ input[type='radio'] {
   border: 5px solid  #FFEE2E;
   background-color:  #FFEE2E;
   z-index: 100;
-}
+} */
 /* label:before .active {
   content: " ";
   display: inline-block;
@@ -387,19 +401,7 @@ input[type='radio'] {
   z-index: 100;
 } */
 
-label #active{
-  color: #E47209;
-}
 
-input[type=radio]:checked + label:before {
-  border: 5px solid  orange;
-  background-color:  orange;
-
-  z-index: 101;
-}
-label:before:hover{
-  background-color: #4B9200;
-}
 
 .another-amount{
   display: flex;
@@ -409,7 +411,7 @@ label:before:hover{
   display: flex;
   flex-direction: column;
 }
-.number{
+.another-amount .number{
   margin-bottom: 12px;
   position: relative;
 }
@@ -442,6 +444,7 @@ outline: none;
   margin: 0;
 }
 
+
 /* Firefox */
 .number-input[type=number] {
   -moz-appearance: textfield;
@@ -462,8 +465,21 @@ outline: none;
   justify-content: center;
   gap: 50px;
 }
- #monthly{
-padding-right: 10px;
+ #monthly,#once{
+margin-right: 10px;
+}
+.another-radio {
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid var(--accent-color);
+	border-radius: 50%;
+	background-clip: content-box;
+
+}
+
+.another-radio:checked {
+	background-color: var(--accent-color);
 }
 .donate-btn{
   width: 298px;
