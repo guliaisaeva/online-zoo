@@ -409,11 +409,14 @@ border-radius: 5px;
 .number-input:focus{
 outline: none;
 }
- .dollar{
+.another-amount  .dollar{
   position: absolute;
   right: 17px;
-  top: 30%;
-  fill: #929699;
+  top: 20%;
+ color: #929699 ;
+width: 26px;
+height:26px;
+font-size: 26px;
 }
 .number-input::-webkit-outer-spin-button,
 .number-input::-webkit-inner-spin-button {
