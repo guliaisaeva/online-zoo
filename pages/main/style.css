@@ -1333,8 +1333,5 @@ height: auto;
 margin: 0;
 color: white;
 }
-.footer__icons{
-  flex-direction: row;
-  top:30%;
-}
+
 }
