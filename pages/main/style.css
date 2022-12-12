@@ -1206,7 +1206,6 @@ left: 10%;
   .header{
     position: relative;
   }
-
   .nav__menu {
   width: 100%;
   position: absolute;
@@ -1238,7 +1237,6 @@ display: none;
 .nav__designer.active{
   display: block;
 }
-
 .nav__designer a{
   font-size: 0.9rem;
   color: #000;
@@ -1269,7 +1267,6 @@ display: none;
 .prev {
   background-image: url(../../assets/icons/pets/nextArrow.svg);
   top: 46%;
-
 }
 .pick-and-feed__title{
   font-size: 30px;
