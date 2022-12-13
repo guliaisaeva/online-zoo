@@ -776,12 +776,16 @@ margin-top: 3rem;
       color: var(--btn--active-color);
       text-decoration: underline;
     }
-
+    @media screen and (max-width:1600px) {
+      .container{
+        width: 1160px;
+        margin: 0 auto;
+     }}
     /* responsive design with media queary*/
     /* 1000px */
     @media screen and (max-width:1000px) {
       .container{
-        max-width: 940px;
+        width: 940px;
         margin: 0 auto;
      }
      .hero__content h2{
@@ -1059,9 +1063,9 @@ padding: 2rem 0;
     padding-bottom: 45px;
   }
   .footer__right{
-position: relative;
-right: 95px;
-bottom:10px;
+ position: relative;
+ right: 95px;
+ bottom:10px;
 
   }
   .subscrip{
