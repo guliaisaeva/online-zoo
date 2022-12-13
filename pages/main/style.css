@@ -1199,6 +1199,17 @@ left: 10%;
  .footer-nav-link{
   color: #fff;
   }
+  .animal-cards__slider-arrow{
+    width: 50px;
+    height: 50px;
+  }
+  .prev{
+    left:200px;
+
+  }
+  .next{
+    left: 350px;
+  }
 
 }
 /*-------------- Tablet size------------------ */
@@ -1230,17 +1241,17 @@ text-align: center;
   width: 500px;
   font-size: 1rem;
 }
-.nav__designer{
+.designer-display{
 position: absolute;
 right:41%;
 top: 200px;
 padding-top: 60px;
 display: none;
 }
-.nav__designer.active{
+.designer-display.active{
   display: block;
 }
-.nav__designer a{
+.designer-display a{
   font-size: 0.9rem;
   color: #000;
 }
@@ -1339,5 +1350,129 @@ color: white;
   width: 100%;
  margin: 0 auto;
 }
+.footer__middl{
+width: 100%;
+position: relative;
+left: -120px;
+}
+.pick-and-feed__subtitle,.pick-and-feed p{
+  text-align: center;
+  padding: 10px 20px;
+}
+.pick-and-feed__title{
+  padding: 20px 0;
+}
 
+}
+@media screen and (max-width: 640px){
+  .container{
+    max-width: 600px;
+  }
+  .animal-cards__slider-arrow{
+    width: 50px;
+    height: 50px;
+  }
+  .prev{
+    left:200px;
+
+  }
+  .next{
+    left: 350px;
+  }
+  .hero__content h2{
+   margin-right: 0;
+   margin-top: 70px;
+  }
+  .watch-btn{
+    left:25%;
+  }
+  .pick-and-feed__subtitle,.pick-and-feed p{
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .pick-and-feed__title{
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 565px){
+  .container{
+    max-width: 500px;
+  }
+  .prev{
+    left:180px;
+
+  }
+  .next{
+    left: 260px;
+  }
+  .pet-btn{
+    left:20%;
+  }
+.how-it-works h3{
+  padding: 20px 0;
+}
+
+.how-it-works .cards{
+  flex-direction: column;
+}
+.pick-and-feed{
+  height:1042px;
+}
+.pick-and-feed__content{
+  height: 1000px;
+  margin-top: 10rem;
+ justify-content: center;
+}
+.pick-and-feed__content figure,figcaption{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.img-box{
+  width: 100px;
+  height: 100px;
+}
+.img-box .img3{
+  width: 20px;
+}
+.footer{
+  position: relative;
+}
+.footer__content{
+  width: 100%;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.footer__icons{
+flex-direction: row;
+padding: 2rem 0 2rem 3rem;
+text-align: center;
+}
+.footer__logo{
+  padding: 0;
+  width: 100%;
+position: absolute;
+top: 10px;
+left: 45%;
+border: none;
+padding: 1rem 0;
+}
+.footer__logo a{
+  width:100%;
+}
+.footer__button{
+  position: absolute;
+  top: 40%;
+  left: 25%;
+}
+.footer__middl{
+padding: 0;
+position: absolute;
+bottom: 10%;
+left: 5%;
+}
 }
