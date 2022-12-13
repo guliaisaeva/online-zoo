@@ -1476,3 +1476,167 @@ bottom: 10%;
 left: 5%;
 }
 }
+
+@media screen and (max-width: 517px){
+.container{
+  width: 490px;
+}
+
+.backstage::after {
+  display: block;
+  content: url(../../assets/images/hero-backstage/flower_small.png);
+  z-index: 1;
+  top: 10%;
+}
+.animal-cards__slider-arrow{
+  display: none;
+}
+.animal-cards__slider{
+  width: 100%;
+  margin-top: -3.5rem;
+
+}
+.animal-cards__content{
+  width: 100%;
+  grid-template-columns: 1fr;
+  gap: 0;
+place-items: center;
+}
+.animal-cards__card{
+  width: 200px;
+  height: 250px;
+}
+.pets::before {
+  content: url(../../assets/images/animal-card/palm_fotoSmall.png);
+}
+.pets::after {
+  content: url(../../assets/images/animal-card/strelitzia-small.png);
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  z-index: 1;
+}
+.pet-btn{
+  width: 100%;
+margin-top: -3rem;
+left: 0;
+}
+.testimonial-btn{
+margin-left: -4rem;
+}
+.logo__link h1 {
+  font-size: 0.7rem;
+  max-width: 50px
+;
+  font-weight: 400;
+  color: var(--light-color);
+  margin: 3.55px 4.75px;
+  cursor: pointer;
+}
+.header__logo{
+margin-left: 3rem;
+}
+}
+@media screen and (max-width: 425px){
+  .container{
+    width: 400px;
+  }
+  .hero__content h2 {
+    margin-top: 70px;
+    font-size: 4rem;
+    text-align: center;
+
+  }
+  .hero__content h2::before{
+right: 40px;
+  }
+  .footer__button{
+    width: 100%;
+    left: 0;
+  }
+  .testimonials__content{
+    width: 100%;
+  }
+  .testimonial-btn{
+    margin-left: -4.5rem;
+    }
+    .testimonials__teastimonial p{
+   text-overflow: ellipsis;
+    }
+    .testimonials__teastimonial .lastp {
+    display: none;
+    }
+    .backstage h2{
+      font-size: 24px;
+    }
+  }
+  @media screen and (max-width: 402px){
+    .container{
+      width: 370px;
+    }
+    .watch-btn{
+      left:15%;
+    }
+    .footer__icons{
+      right: 15px;
+    }
+  }
+    @media screen and (max-width: 375px){
+      .container{
+        width: 340px;
+      }
+      .footer__icons{
+        right: 10px;
+      }
+      .footer__icons a{
+        font-size: 10px;
+      }
+    }
+    @media screen and (max-width: 365px){
+.container{
+  width: 320px;
+}
+    }
+    @media screen and (max-width: 355px){
+      .container{
+        width: 320px;
+      }
+      .hero__content h2{
+        left: 10%;
+      }
+      .hero__content h2::before{
+        right: 35px;
+          }
+          .watch-btn{
+              left:10%;
+          }
+          .footer__navlist{
+            gap: 40px;
+          }
+          }
+          @media screen and (max-width: 320px){
+            .container{
+              width: 300px;
+            }
+            .footer__navlist{
+              gap: 40px;
+            }
+            .testimonial-btn{
+              margin-left:-5.5rem;
+            }
+            .testimonials{
+              padding-top: 12rem;
+            }
+            .testimonials h3{
+              padding:0 0 2rem 0;
+            }
+            .hero__content h2{
+              left: 15%;
+            }
+            .hero__content h2::before{
+              right: 45px;
+                }
+                .watch-btn{
+                  left:5%;
+              }
+          }
