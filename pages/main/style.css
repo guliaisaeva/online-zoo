@@ -89,18 +89,26 @@ button{
     text-align: center;
     font-style: normal;
     cursor: pointer;
+    border-radius: 25px;
+
 }
 button:hover{
-  background: #E47209 ;
+  background: #E47209;
 }
-
+button:active{
+  background: var(--btn--active-color);
+}
 /*----------- CSS Classes--------- */
  .rounded_btn{
   border-radius: 25px;
 }
+
 .rounded_btn:hover{
   background: #E47209;
   color: white;
+}
+.rounded_btn:active{
+  background: var(--btn--active-color);
 }
 .square_btn{
   border-radius: 5px;
@@ -114,6 +122,9 @@ color: var(--light-color);
 }
 .square_btn:hover{
   background-color: #E47209;
+}
+.square_btn:active{
+  background: var(--btn--active-color);
 }
 .subtitle{
   font-weight: 400;
@@ -181,11 +192,10 @@ cursor: pointer;
 }
 .header__menu a:hover,.nav__designer a:hover{
 color: var(--accent-color);
-text-decoration: underline;
-text-decoration-thickness: 2px;
-text-decoration-color: var(--light-color);
-text-underline-offset: 10px;
 }
+.header__menu a:active,.nav__designer a:active{
+  color: var(--accent-color);
+  }
 .header__link,.nav__designer a{
   font-family: var(--body-font);
   color:var(--light-color);
@@ -243,9 +253,10 @@ text-underline-offset: 10px;
       right: 108.31px;
     }
     .hero__btn{
+      background: transparent;
+      border-radius: 25px;
       margin-right: 7%;
       cursor: pointer;
-      z-index: 10;
     }
     .hero__btn a{
     color: var(--light-color);
@@ -373,22 +384,17 @@ text-underline-offset: 10px;
       background-position: center;
       background-repeat: no-repeat;
       border: none;
+      z-index: 15;
     }
     .prev {
-      background-image: url(../../assets/icons/pets/nextArrow.svg);
       top: 45%;
       right: 1180px;
+      z-index: 100;
     }
     .next {
-      background-image: url(../../assets/icons/pets/prevArrow.svg);
       top: 45%;
       left: 1180px;
-    }
-    .animal-cards__slider-arrow:hover,
-    .prev:hover,
-    .next:hover {
-      background-color: var(--btn-hover-color);
-      cursor: pointer;
+      z-index: 100;
     }
     .arrow-active:active {
       background-color: var(--btn--active-color);
@@ -514,7 +520,9 @@ text-underline-offset: 10px;
     }
     .how-it-works__button:hover{
       background: #E47209 ;
-      transform: scale(1.1);
+    }
+    .how-it-works__button:active{
+      background: var(--btn--active-color);
     }
     .how-it-works__button a{
       color: var(--light-color);
@@ -654,7 +662,7 @@ margin-top: 3rem;
       width: 72.49px;
       border: 1.19px solid var(--light-color);
       border-radius: 2px;
-      margin-bottom: 74.55px;
+      margin-bottom: 68px;
     }
     .footer__logo-link{
       color: var(--light-color);
@@ -682,27 +690,82 @@ margin-top: 3rem;
       bottom:0;
     }
     .footer__button{
+      width:298px ;
+      text-align: center;
+      background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+      padding: 16px 20px;
+      border-radius: 5px;
       margin-bottom: 44px;
     }
     .footer__button a{
       color: var(--light-color);
-      padding: 16px 20px;
-      width: 298px;
-      font: 400;
       font-size: 16px;
+      font-family: var(--body-font);
+      font-weight: 500;
+      line-height: 140%;
+      text-transform: uppercase;
+      font-style: normal;
     }
-    .button__donate:hover{
-    background:  #E47209;;
+    .footer__button:hover{
+      background:  #E47209;;
     }
-    .footer__icons{
+    .footer__button:active{
+      background: var(--btn--active-color);
+    }
+    .footer li {
+      margin-bottom: 10px;
+    }
+
+.footer__icons a{
+  display: flex;
+  color: var(--light-color);
+  font-family:var(--body-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+.footer__icons li:active img{
+  background: var(--btn--active-color);
+}
+ .footer__icons li:active a{
+  color:var(--btn--active-color);
+ }
+.footer__icons img{
+  margin-right: 12px;
+background: var(--socials-bg-color);
+border-radius: 50%;
+object-fit: cover;
+
+}
+.footer__icons .facebook{
+  padding: 5px 9px;
+}
+.footer__icons .twitter{
+  padding: 6px 5px;
+}
+.footer__icons .instagram{
+padding: 5px;
+}
+.footer__icons .youtube{
+padding: 6px 5px;
+}
+
+    /* .footer__icons{
       display: flex;
       flex-direction: column;
       gap: 10px;
     }
+
     .footer__icons img{
       background-color: var(--socials-bg-color);
-     border-radius: 50%;
-     object-fit: cover;
+      margin-right: 12px;
+      position: relative;
+      bottom: 2px;
+      width: 26px;
+      height: 26;
+     /* border-radius: 50%;*/
+     /* object-fit: cover;
     }
     .footer__icons img:hover{
       background-color: #4B9200;
@@ -710,6 +773,7 @@ margin-top: 3rem;
     .footer__icons a{
       color: var(--light-color);
       padding-right: 12px;
+      line-height: 22.4px;
     }
     .footer__icons a:hover{
     color: #4B9200;
@@ -717,7 +781,7 @@ margin-top: 3rem;
     .footer__icons img{
     padding: 5px;
     margin-right: 12px ;
-    }
+    } */
     .footer__middl{
       align-self: flex-end;
       padding-bottom: 45px;
@@ -740,9 +804,16 @@ margin-top: 3rem;
     }
     input[type=email]{
       background-color: transparent;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
       width: 228px;
-      border: 2px solid #D31414;
-      padding:10px;
+      padding: 10px;
+      height: 42px;
+      border: 1px solid rgba(249, 128, 75);
+      margin-right: 6px;
     }
     input[type=email]:focus{
     outline-color: #4B9200;
@@ -751,28 +822,66 @@ margin-top: 3rem;
     color: white;
     }
     input[type=submit]{
-      width: 129px;
       padding:10px;
       background: #F1F3F2;
-      color: #D31414;
-      border: 1px solid  #D31414;
+      color: var(--dark-color);
+      width: 128px;
+      height: 42px;
+      border-radius: 5px;
+      color: var(--dark-color);
+      cursor: pointer;
+    }
+    input[type=submit]:hover{
+      border: 1px solid var(--accent-color);
     }
     input::placeholder{
+      font-family: var(--body-font);
       font-size: 16px;
       line-height: 140%;
       font-weight: 400;
-      color:#D31414;
+      color: var(--light-color);
+    }
+    input[type=submit]:active{
+      color: var(--btn--active-color);
+      border: 2px solid var(--btn--active-color);
+    }
+  .input[type=email]:focus input[type=submit]{
+    color: var(--btn--active-color);
+    border: 1px solid var(--btn--active-color);
+  }
+    .input[type=email]:invalid + input[type=submit]{
+      color:  #D31414;
+      border: 1px solid  #D31414;
+      font-style: normal;
+       font-weight: 400;
+       font-size: 16px;
+     line-height: 140%;
+    }
+    .input[type=email]:active, .input[type=email]:focus{
+      outline: none;
+      color:  #BDBDBD;
+      font-weight: 400;
+      font-size: 16px;
+    line-height: 140%;
     }
     input:focus::placeholder{
-      color:  #BDBDBD;;
+      color:  #BDBDBD;
+      font-weight: 400;
+      font-size: 16px;
+    line-height: 140%;
     }
     .copyright a,.copyright p{
       color: rgb(186, 177, 177);
       font-size: 16px;
       font-weight: 100;
       line-height: 200%;
+      cursor: pointer;
     }
     .copyright a:hover,.copyright p:hover{
+      color: var(--light-color);
+      text-decoration: underline;
+    }
+    .copyright a:active,.copyright p:active{
       color: var(--btn--active-color);
       text-decoration: underline;
     }
