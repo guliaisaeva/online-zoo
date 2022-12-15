@@ -38,3 +38,12 @@ btn.addEventListener("click",function(){
         btn.style.border="1px solid black"
     }
 })
+
+//  Buger Menu
+const burgerMenu=document.querySelector("#burger-menu");
+const navEl=document.querySelector(".nav__menu");
+const designerEl=document.querySelector(".nav__designer");
+burgerMenu.addEventListener("click",()=>{
+navEl.classList.toggle("active");
+designerEl.classList.toggle("active");
+})

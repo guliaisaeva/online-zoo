@@ -28,8 +28,8 @@
                         </a>
                     </div>
                     <!-- NAV -->
-                    <nav class="nav header__nav">
-                        <ul class="nav__menu header__menu">
+                    <nav class="nav header__nav ">
+                        <ul class="nav__menu display header__menu">
                             <li><a class="header__link nav__link active" id="about" href="#about">About</a></li>
                             <li><a class="header__link nav__link" href="#map">Map</a></li>
                             <li><a class="header__link nav__link" href="#zoos">Zoos</a></li>
@@ -38,10 +38,15 @@
                             <li><a class="header__link nav__link" href="#contact">Contact us</a></li>
                         </ul>
                     </nav>
+                    <!-- burger menu -->
+
                 </div>
-                <div class="nav__designer">
+                <div class="nav__designer designer-display">
                     <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" target="_blank">Designed
                         by &copy;</a>
+                </div>
+                <div id="burger-menu">
+                    <img src="../../assets/icons/header-hero/burger_menu.svg" alt="">
                 </div>
             </div>
         </div>
@@ -52,8 +57,13 @@
             <div class="container">
                 <div class="hero__content">
                     <h2>Watch your <span class="colored">favorite</span> animal online</h2>
+
                     <div class="hero__btn">
                         <button class="rounded_btn ">WATCH ONLINE</button>
+
+                    <div class="hero__btn btn">
+                        <button class="button watch-btn rounded_btn ">WATCH ONLINE</button>
+
                     </div>
                 </div>
             </div>
@@ -86,11 +96,17 @@
             <div class="container">
                 <div class="animal-cards__slider">
                     <div class="animal-cards__content">
+
                         <button class="animal-cards__slider-arrow prev" id="prev"><img
                                 src="../../assets/icons/pets/nextArrow.svg" alt="arrow icon"></button>
                         <button class="animal-cards__slider-arrow next" id="next"><img
                                 src="../../assets/icons/pets/prevArrow.svg" alt="arrow icon"></button>
                         <figure class="animal-cards__card">
+
+                        <button class="animal-cards__slider-arrow prev" id="prev"></button>
+                        <button class="animal-cards__slider-arrow next" id="next"></button>
+                        <figure class="animal-cards__card tablet">
+
                             <img style="border-radius:5px;" src="../../assets/images/animal-card/panda1.jpg"
                                 alt="panda">
                             <figcaption>
@@ -155,7 +171,7 @@
                                 </div>
                             </figcaption>
                         </figure>
-                        <figure class="animal-cards__card">
+                        <figure class="animal-cards__card tablet">
                             <img style="border-radius:5px;" src="../../assets/images/animal-card/penguins6.jpg"
                                 alt="penguins">
                             <figcaption class="animal-cards__items">
@@ -173,7 +189,7 @@
                     <div class="button button-slider next"></div>
                 </div>
                 <div class="animal-cards__button btn">
-                    <button class="button rounded_btn">Choose Your Favorite</button>
+                    <button class="button pet-btn rounded_btn">Choose Your Favorite</button>
                 </div>
             </div>
         </div>
@@ -255,13 +271,14 @@
                                     instill a love for animals.The best online zoo I’ve met. My
                                     son delighted very much ljves to watch gouillas. Online zoo
                                     is one jf the ways to instill a love for animals.</p>
-                                <p>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                                <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to watch
+                                    gouillas.
                                     Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve
                                     met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the
                                     ways to instill a love for </p>
                             </div>
                         </div>
-                        <div class="testimonials__card">
+                        <div class="testimonials__card first">
                             <figure class="testimonials__header">
                                 <img src="../../assets/images/testimonial-footer/user2.png" alt="user icon">
                                 <figcaption>
@@ -277,7 +294,8 @@
                                     met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the
                                     ways to instill a love for animals.The best online zoo I’ve met. My son delighted
                                     very much ljves to watch gouillas.</p>
-                                <p>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                                <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to watch
+                                    gouillas.
                                     Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve
                                     met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the
                                     ways to instill a love for </p>
@@ -299,13 +317,14 @@
                                     Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve
                                     met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the
                                     ways to instill a love for animals.</p>
-                                <p>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                                <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to watch
+                                    gouillas.
                                     Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve
                                     met.</p>
-                                <p>The best online zoo I’ve met. My son delighted very much ljves to </p>
+                                <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to </p>
                             </div>
                         </div>
-                        <div class="testimonials__card">
+                        <div class="testimonials__card last">
                             <figure class="testimonials__header">
                                 <img src="../../assets/images/testimonial-footer/user4.png" alt="user icon">
                                 <figcaption>
@@ -317,7 +336,8 @@
                                 </figcaption>
                             </figure>
                             <div class="testimonials__teastimonial">
-                                <p>My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to
+                                <p class="lastp">My son delighted very much ljves to watch gouillas. Online zoo is one
+                                    jf the ways to
                                     instill a love for animals.The best online zoo I’ve met. My son delighted very much
                                     ljves to watch gouillas. Online zoo is one jf the ways to instill a love for
                                     animals.The best online zoo I’ve met. My son delighted very much ljves to watch
@@ -332,7 +352,7 @@
                         <input type="range" class="input_range" min="0" max="10" step="1" value="0">
                     </div>
                     <div class="testimonial__button ">
-                        <button class="button square_btn">LEAVE FEEDBACK</button>
+                        <button class="testimonial-btn button square_btn">LEAVE FEEDBACK</button>
                     </div>
                 </div>
             </div>
@@ -374,23 +394,23 @@
                                     href="../main/index.html">About</a></li>
                             <li><a class="header__link nav__link footer-nav-link" href="#map">Map</a></li>
                             <li><a class="header__link nav__link footer-nav-link" href="#zoos">Zoos</a></li>
-                            <li><a class="header__link nav__link footer-nav-link"
+                            <li class="dnte"><a class="header__link nav__link footer-nav-link"
                                     href="../donate/donate.html">Donate</a></li>
-                            <li><a class="header__link nav__link footer-nav-link" href="#contact">Contact us</a></li>
+                            <li><a class="header__link nav__link footer-nav-link" href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="footer__right">
                     <div class="subscription">
                         <div>
-                            <h5 class="subtitile">Subscribe tou our news</h5>
+                            <h5 class="subtitile">Subscribe to our news</h5>
                             <form method="POST" class="subscrip">
                                 <input type="email" placeholder="Enter your email" id="email" name="email">
                                 <input id="btn" type="submit" value="Submit">
                             </form>
                         </div>
                         <div class="copyright">
-                            <a href="#">Designed by Alisa Samborskaya</a>
+                            <a class="footer-link" href="#">Designed by Alisa Samborskaya</a>
                             <p> &copy; RSSchool &amp; &copy; Yem Digital 2021</p>
                         </div>
                     </div>
