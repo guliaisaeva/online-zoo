@@ -315,7 +315,7 @@ color: var(--accent-color);
     background-color: var(--light-bg-color);
     position: relative;
     }
-    .animal-cards__content{
+   .animal-cards__content{
       height: 100%;
       display: grid;
       grid-template-columns: repeat(3,1fr);
@@ -330,12 +330,10 @@ color: var(--accent-color);
       justify-content: space-between;
       align-items: center;
       padding: 0 10px;
-    }
-    .animal-cards__content figcaption{
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 120%;
-    color: var(--dark-color);
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 120%;
+      color: var(--dark-color);
     }
     /* border liner gradinet */
     .animal-cards__card{
@@ -387,13 +385,13 @@ color: var(--accent-color);
       z-index: 15;
     }
     .prev {
-      top: 45%;
-      right: 1180px;
+      top: 37%;
+      left: 0.5rem;
       z-index: 100;
     }
     .next {
-      top: 45%;
-      left: 1180px;
+      top: 37%;
+      right: 0.5rem;
       z-index: 100;
     }
     .arrow-active:active {
@@ -407,13 +405,13 @@ color: var(--accent-color);
       content: url(../../assets/images/animal-card/palm_foto.png);
       position: absolute;
       left: 0;
-      bottom: 0;
+      bottom: -4px;
       z-index: 1;
     }
     .pets::after{
       content: url(../../assets/images/animal-card/strelitzia-flower1.png);
       position: absolute;
-      bottom: 0;
+      bottom: -4px;
       right: 0;
       z-index: 1;
     }
@@ -885,19 +883,65 @@ padding: 6px 5px;
       color: var(--btn--active-color);
       text-decoration: underline;
     }
+       /* responsive design with media queary*/
+
     @media screen and (max-width:1600px) {
       .container{
         width: 1160px;
         margin: 0 auto;
      }}
-    /* responsive design with media queary*/
-    /* 1000px */
+     @media screen and (max-width:1314px) {
+      .container{
+        width: 1100px;
+        margin: 0 auto;
+     }
+     #email,#btn{
+      width: 120px;
+     }
+    }
+     @media screen and (max-width:1203px) {
+      .container{
+        width: 1000px;
+        margin: 0 auto;
+     }
+     .dnte{
+      display: none;
+     }
+     .backstage::after {
+      display: none;
+     }}
+     @media screen and (max-width:1173px) {
+      .container{
+        width: 980px;
+        margin: 0 auto;
+     }
+     .prev {
+      top: 35%;
+    }
+    .next {
+      top: 35%;
+    }
+    .testimonials__cards{
+      gap: 5px;
+    }
+    }
+    @media screen and (max-width:1173px) {
+      .container{
+        width: 950px;
+        margin: 0 auto;
+     }
+     .last{
+      display: none;
+     }
+     .testimonials__cards{
+      gap: 10px;
+    }}
+  /* 1000px */
     @media screen and (max-width:1000px) {
       .container{
         width: 940px;
-        margin: 0 auto;
      }
-     .hero__content h2{
+     /* .hero__content h2{
       width: 400.25px;
       font-size:5.313rem;
       margin-top: 30px;
@@ -924,9 +968,9 @@ padding: 6px 5px;
       }
       .hero__btn a{
       color: var(--light-color);
-      }
+      } */
       /* backstage section */
-      .backstage{
+      /* .backstage{
         background-color: var(--light-bg-color);
         position: relative;
         z-index: 4;
@@ -974,24 +1018,24 @@ padding: 6px 5px;
         .backstage__text2{
           line-height: 120%;
           font-weight: 400;
-        }
+        } */
       /*-------------- pets section------------ */
-      .pets{
+      /* .pets{
         height: 100%;
         background-color: var(--light-bg-color);
         position: relative;
         }
-        .animal-cards__content{
+         .animal-cards__content{
           height: 100%;
           display: grid;
           grid-template-columns: repeat(3,1fr);
           justify-content: center;
           align-items: center;
           grid-row-gap: 88px;
-          grid-column-gap: 30px;
-          /* margin-bottom: 5rem; */
-        }
+          grid-column-gap: 30px; */
+          /* /* margin-bottom: 5rem;   }*/
 
+/*
         .animal-cards__slider-arrow {
           position: absolute;
           width: 62px;
@@ -1042,9 +1086,9 @@ padding: 6px 5px;
           bottom: -5px;
           right: 0;
           z-index: 1;
-        }
+        } */
  /*------------Pick and Feed ---------------*/
- .pick-and-feed{
+ /* .pick-and-feed{
   height:876px;
   width: 100%;
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
@@ -1076,10 +1120,10 @@ padding: 6px 5px;
  color: var(--accent-color);
 margin: 0;
 padding: 2rem 0;
-}
+} */
 
  /*--------- testimonials */
-         .testimonials{
+         /* .testimonials{
           height: 849px;
           padding-top: -60px;
          }
@@ -1097,7 +1141,7 @@ padding: 2rem 0;
           display: flex;
           flex-direction: column;
           /* height: 842px; */
-          justify-content: center;
+          /* justify-content: center;
           align-items: center;
         }
 
@@ -1120,12 +1164,12 @@ padding: 2rem 0;
           background:linear-gradient(#F1F3F2,#F1F3F2) padding-box,
           linear-gradient(to left,rgba(254, 189, 171, 0.74) 74%,rgba(243, 169, 248, 0.66) 66%,rgba(224, 216, 240, 1)100%,rgba(234, 247, 254, 1) 100%,rgba(234, 247, 254, 1)100%) border-box;
           border: 0.5px solid transparent;
-          border-radius: 5px;
+          border-radius: 5px; */
           /* margin: 2rem 0; */
-        }
+        /* } */
 
  /*footer*/
- .footer{
+ /* .footer{
   height: 443px;
   background-color: var(--footer-bg-color);
   }
@@ -1189,8 +1233,8 @@ padding: 2rem 0;
   flex-direction: column;
   gap: 90px;
   padding-right: 50px;
-  }
-
+  } */
+/*
   input[type=email]{
     background-color: transparent;
     width: 228px;
@@ -1210,11 +1254,11 @@ padding: 2rem 0;
     color: #000;
     border: 1px solid #fff;
     border-radius: 5px;
-  }
-  .footer__navlist{
+  } */
+  /* .footer__navlist{
     width: 370px;
     margin-left: -40px;
-  }
+  } */
 }
 
 @media screen and (max-width: 958px){
@@ -1380,7 +1424,7 @@ display: none;
     z-index: 1;
     top: 10%;
 }
-.tablet{
+/* .tablet{
   display: none;
 }
 .animal-cards__content{
@@ -1394,7 +1438,7 @@ display: none;
 .prev {
   background-image: url(../../assets/icons/pets/nextArrow.svg);
   top: 46%;
-}
+} */
 .pick-and-feed__title{
   font-size: 30px;
 }
@@ -1407,7 +1451,7 @@ display: none;
 .pick-and-feed p{
   font-size: 14px;
 }
-.next {
+/* .next {
   background-image: url(../../assets/icons/pets/prevArrow.svg);
   top: 46%;
 }
@@ -1420,7 +1464,7 @@ display: none;
 }
 .arrow-icon{
   display: none;
-}
+} */
 .testimonials{
  padding-top: 15rem;
 height: 100%;
@@ -1601,7 +1645,7 @@ left: 5%;
   z-index: 1;
   top: 10%;
 }
-.animal-cards__slider-arrow{
+ /* .animal-cards__slider-arrow{
   display: none;
 }
 .animal-cards__slider{
@@ -1609,17 +1653,17 @@ left: 5%;
   margin-top: -3.5rem;
 
 }
-.animal-cards__content{
-  width: 100%;
+ .animal-cards__content{
+   width: 100%;
   grid-template-columns: 1fr;
-  gap: 0;
-place-items: center;
-}
-.animal-cards__card{
+   gap: 0;
+ place-items: center;
+ }
+ .animal-cards__card{
   width: 200px;
   height: 250px;
-}
-.pets::before {
+} */
+/* .pets::before {
   content: url(../../assets/images/animal-card/palm_fotoSmall.png);
 }
 .pets::after {
@@ -1633,7 +1677,7 @@ place-items: center;
   width: 100%;
 margin-top: -3rem;
 left: 0;
-}
+} */
 .testimonial-btn{
 margin-left: -4rem;
 }
