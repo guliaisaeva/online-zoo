@@ -13,4 +13,4 @@
 >>>>>>> 0a1ad6245bf2182cf0cb3f04a0fb378870de1066
 =======
 # online-zoo project week 3[Link to source](https://guliaisaeva.github.io/online-zoo/pages/main/index.html)
->>>>>>> 66a60e797abd4dfc3cfc9ff688e45240bf9893be
+
