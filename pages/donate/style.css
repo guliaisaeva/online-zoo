@@ -884,7 +884,8 @@ left:40%;
           left: 0;
           z-index: 100;
         }
-        .display {
+
+        .donate-display {
           width: 100%;
           position: absolute;
           display: flex;
@@ -898,11 +899,11 @@ left:40%;
         text-align: center;
         z-index: 101;
         }
-        .display.active{
+        .donate-display.active{
           display: block;
 
         }
-        .display a{
+        .donate-display a{
           color: #000;
           width: 500px;
           font-size: 1rem;
