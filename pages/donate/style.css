@@ -1,4 +1,5 @@
-/*------------ Variables Css---------- */
+
+ /*------------ Variables Css---------- */
 
 /* typography */
 :root {
@@ -708,3 +709,768 @@ padding: 6px 5px;
     color: var(--btn--active-color);
     text-decoration: underline;
   }
+
+
+         /* responsive design with media queary*/
+
+         @media screen and (max-width:1600px) {
+          .container{
+            width: 1160px;
+            margin: 0 auto;
+         }}
+         @media screen and (max-width:1314px) {
+          .container{
+            width: 1100px;
+            margin: 0 auto;
+         }
+         #email,#btn{
+          width: 120px;
+         }
+        }
+         @media screen and (max-width:1203px) {
+          .container{
+            width: 1000px;
+            margin: 0 auto;
+         }
+         .dnte{
+          display: none;
+         }
+         .backstage::after {
+          display: none;
+         }}
+         @media screen and (max-width:1173px) {
+          .container{
+            width: 980px;
+            margin: 0 auto;
+         }
+         .prev {
+          top: 35%;
+        }
+        .next {
+          top: 35%;
+        }
+        .testimonials__cards{
+          gap: 5px;
+        }
+        }
+        @media screen and (max-width:1173px) {
+          .container{
+            width: 950px;
+            margin: 0 auto;
+         }
+         .last{
+          display: none;
+         }
+         .testimonials__cards{
+          gap: 30px;
+        }}
+
+        @media screen and (max-width:1085px){
+          .container{
+            width: 942px;
+         }
+         .animal-cards__content {
+          grid-row-gap: 90px;
+      }
+        }
+      /* 1000px */
+        @media screen and (max-width:1000px) {
+          .container{
+            width: 940px;
+         }
+         .prev {
+          top: 35.5%;
+          left: 35%;
+        }
+        .next {
+          top: 35.5%;
+          right: 35%;
+        }
+    /*hero*/
+    .hero__content h2{
+      width: 400.25px;
+      font-size:5.313rem;
+      margin-top: 30px;
+      margin-right: 50px;
+    }
+    .hero{
+      margin-top: -80px;
+      }
+      .hero__content{
+        height:584px;
+      }
+      .hero__content h2::before{
+        content: "";
+        width: 367px;
+        height: 367px;
+        top: 40px;
+        right: 100px;
+      }
+        /*backstage*/
+        .backstage__img-box img{
+          width: 92%;
+          height: 410px;
+          }
+        .backstage__text-box{
+          width: 60%;
+          }
+        .backstage h2{
+          font-size: 40px;
+          font-family: var(--body-font);
+          height: 116px;
+        }
+        .hero__btn{
+          margin-right: 11%;
+          margin-top:-20px;
+          cursor: pointer;
+          z-index: 10;
+        }
+        .hero__btn a{
+        color: var(--light-color);
+        }
+
+        .animal-cards__slider-arrow {
+          width: 62px;
+          height: 62px;
+        }
+        .pets::before{
+          content: url(../../assets/images/animal-card/palmSmall.png);
+          position: absolute;
+          left: 0;
+          bottom:-5px;
+          z-index: 1;
+        }
+        .pets::after{
+          content: url(../../assets/images/animal-card/strelitziaSmall.png);
+          position: absolute;
+          bottom: -5px;
+          right: 0;
+          z-index: 1;
+        }
+        /*------------Pick and Feed ---------------*/
+     /* .pick-and-feed{
+
+      /* display: flex;
+      justify-content: center;
+      align-items: center;
+     text-align: center;
+     }*/
+    .pick-and-feed .container{
+     width: 98%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     text-align: center;
+    }
+    .pick-and-feed__content{
+      height: 796px;
+       padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: -15px;
+    }
+    .pick-and-feed__title{
+     color: var(--accent-color);
+    margin: 0;
+    padding: 2rem 0;
+    }
+    .pick-and-feed__text,.pick-and-feed__text2{
+      text-align: left;
+      padding-left: 4rem;
+      padding-right: 2rem;
+    }
+    .testimonials::after{
+      content: url(../../assets/images/testimonial-footer/leav_small.png);
+      position: absolute;
+      right: 0;
+      z-index: -1;
+    }
+    }
+
+    @media screen and (max-width: 958px){
+      .container{
+        max-width: 800px;
+        margin: 0 auto;
+     }
+     .backstage__text-box{
+      width: 60%;
+      }
+      .backstage h2{
+        font-size: 36px;
+      }
+      .prev {
+        top: 34%;
+        left: 36%;
+      }
+      .next {
+        top: 34%;
+        right: 36%;
+      }
+      .animal-cards__slider-arrow{
+        width: 60px;
+        height: 60px;
+      }
+      .pick-and-feed__content{
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        color: var(--paragraf-color);
+        padding:0 50px;
+      }
+      .pick-and-feed__title{
+      font-size: 36px;
+      padding-top: 8rem;
+      }
+      .pick-and-feed__subtitle{
+        font-size:24px
+      }
+      .how-it-works{
+        height: 600px;
+      }
+      .how-it-works h3{
+        margin: 0;
+      }
+      .testimonials__cards{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      .footer{
+        position: relative;
+      }
+      .subscription{
+        display: none;
+      }
+      .footer__icons{
+     position: absolute;
+     right: 50px;
+     top: 50px;
+      }
+    }
+
+    @media screen and (max-width: 870px){
+      .container{
+        max-width: 750px;
+     }
+     .header__link{
+      font-size: 0.7rem;
+     }
+     .hero__content h2{
+      font-size: 4rem;
+     }
+     .hero__content h2::before{
+    width: 300px;
+    height: 300px;
+     }
+     .prev {
+      top: 34.5%;
+      right: 35%;
+    }
+    .next {
+      top: 34.5%;
+      right: 35%;
+    }
+    .cards__slider-arrow{
+      width: 50px;
+      height: 50px;
+    }
+    .first{
+      display: none;
+    }
+    .how-it-works__cards .cards {
+      gap: 10px;
+    }
+    .footer-nav-link{
+      color: #fff;
+      }
+    }
+    @media screen and (max-width: 800px){
+      .container{
+        max-width: 690px;
+     }
+     .header__logo-nav {
+      gap: 60px;
+    }
+    .logo__link h1 {
+      font-size: 1rem;
+      max-width: 72.49px;
+      margin: 3px 4px;
+      cursor: pointer;
+    }
+    .logo__link h1 .o-letter::before {
+      right:2.8rem;
+      bottom: 0;
+    }
+    .subtitle {
+      font-size: 20px;
+    }
+    .nav__designer a{
+      font-size: 0.8rem;
+    }
+     .backstage h2 {
+      font-size: 30px;
+    }
+    .backstage__text-box {
+      gap: 5px;
+    }
+     .footer-nav-link{
+      color: #fff;
+      }
+      .animal-cards__slider-arrow{
+        width: 50px;
+        height: 50px;
+      }
+
+
+    }
+    /*-------------- Tablet size------------------ */
+    @media screen and (max-width: 768px){
+      .container{
+        max-width: 620px;
+      }
+      .header{
+        width: 100vw;
+        position: fixed;
+        height: 70px;
+        top: 0;
+        left: 0;
+        z-index: 100;
+      }
+      .hero__content h2{
+        top: 10%;
+        margin-bottom: 4rem;
+      }
+
+      .display {
+      width: 100%;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+     left:0;
+     top: 70px;
+    background-color: white;
+    padding: 40px 50%;
+    display: none;
+    text-align: center;
+    z-index: 101;
+    }
+    .display.active{
+      display: block;
+
+    }
+    .display a{
+      color: #000;
+      width: 500px;
+      font-size: 1rem;
+    }
+    .designer-display{
+    position: absolute;
+    right:41%;
+    top: 200px;
+    padding-top: 60px;
+    display: none;
+    }
+    .designer-display.active{
+      display: block;
+    }
+    .designer-display a{
+      font-size: 0.9rem;
+      color: #000;
+    }
+    #burger-menu{
+      display: block;
+    }
+    .backstage__img-box{
+      display: none;
+    }
+    .backstage::after{
+      display: block;
+        content: url(../../assets/images/hero-backstage/flower_tablet.png);
+        z-index: 1;
+        top: 10%;
+    }
+     .tablet{
+      display: none;
+    }
+    .animal-cards__content{
+      grid-template-columns: repeat(2,1fr);
+    }
+    .animal-cards__slider-arrow {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+    }
+
+    .pick-and-feed__title{
+      font-size: 30px;
+    }
+    .pick-and-feed__subtitle{
+      font-size: 16px;
+    }
+    .how-it-works h3{
+      font-size: 24px;
+    }
+    .pick-and-feed p{
+      font-size: 14px;
+    }
+    .prev,.next{
+      top: 36%;
+
+    }
+    .testimonials{
+     padding-top: 15rem;
+    height: 100%;
+    }
+    .testimonials__cards{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+    }
+    .testimonials__card{
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0.4rem 1rem;
+    }
+    .last{
+      display: block;
+    }
+    .range{
+      display: none;
+    }
+    .testimonial__button {
+     position: relative;
+    left: 30%;
+    margin: 1rem 0;
+    }
+    .testimonials__content{
+    height: 680px;
+    padding: 0 0 20rem 0;
+    }
+    .testimonials__content h3{
+      font-size: 30px;
+    }
+    .footer{
+    width: 100%;
+    height: auto;
+    color: white;
+    }
+    .footer__navlist{
+      width: 100%;
+     margin: 0 auto;
+    }
+    .footer__middl{
+    width: 100%;
+    position: relative;
+    left: -120px;
+    }
+    .pick-and-feed__subtitle,.pick-and-feed p{
+      text-align: center;
+      padding: 10px 20px;
+    }
+    .pick-and-feed__title{
+      padding: 20px 0;
+    }
+
+    }
+    @media screen and (max-width: 640px){
+      .container{
+        max-width: 600px;
+      }
+      .animal-cards__slider-arrow{
+        width: 50px;
+        height: 50px;
+      }
+
+      .hero__content h2{
+       margin-right: 0;
+       margin-top: 70px;
+      }
+      .watch-btn{
+        left:25%;
+      }
+
+      .pick-and-feed__subtitle,.pick-and-feed p{
+        text-align: center;
+        padding: 10px 20px;
+      }
+      .pick-and-feed__title{
+        padding: 20px 0;
+      }
+      .img-box {
+        width: 150px;
+        height: 150px;
+    }
+    }
+    @media screen and (max-width: 565px){
+      .container{
+        max-width: 500px;
+      }
+    .testimonials{
+      padding-top:
+        17rem;
+    }
+    .testimonials__content h3{
+      padding-bottom: 1rem;
+    }
+      .prev{
+        left:37%;
+
+      }
+      .next{
+        right: 37%;
+      }
+      .arrow-icon{
+        display: none;
+      }
+
+      .pick-and-feed__title{
+        padding-top: 0;
+      }
+      .img-box figcaption{
+        font-size: 0.5rem;
+      }
+    .how-it-works {
+      padding: -20px 0;
+    }
+
+    .how-it-works .cards{
+      flex-direction: column;
+    }
+     .pick-and-feed{
+      height:1042px;
+    }
+    .pick-and-feed__content{
+      /* height: 1000px; */
+      /* margin-top: 10rem; */
+     justify-content: center;
+     margin-top:0;
+     padding: 0;
+     height: auto;
+    }
+    .pick-and-feed__content figure,figcaption{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    }
+    .img-box{
+      width: 100px;
+      height: 100px;
+    }
+    .img-box .img3{
+      width: 20px;
+    }
+    .footer{
+      position: relative;
+    }
+    .footer__content{
+      width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 265px;
+    }
+    .footer__icons{
+    display: flex;
+    padding-top: 3rem;
+    }
+    .footer__logo{
+      padding: 0;
+      width: 100%;
+    position: absolute;
+    top: 10px;
+    left: 45%;
+    border: none;
+    padding: 1rem 0;
+    }
+    /* .footer__logo a{
+      width:100%;
+    } */
+    .footer__button{
+      position: absolute;
+      top: 60%;
+      left: 25%;
+    }
+    .footer__middl{
+    padding: 0;
+    position: absolute;
+    bottom: 1%;
+    left: 2%;
+    }
+    }
+
+    @media screen and (max-width: 517px){
+    .container{
+      width: 490px;
+    }
+
+    .backstage::after {
+      display: block;
+      content: url(../../assets/images/hero-backstage/flower_small.png);
+      z-index: 1;
+      top: 10%;
+    }
+      .animal-cards__slider-arrow{
+      display: none;
+    }
+    .animal-cards__slider{
+      width: 100%;
+      margin-top: -3.5rem;
+
+    }
+     .animal-cards__content{
+       width: 100%;
+      grid-template-columns: 1fr;
+       gap: 0;
+     place-items: center;
+     }
+
+    .pets::before {
+      content: url(../../assets/images/animal-card/palm_fotoSmall.png);
+    }
+    .pets::after {
+      content: url(../../assets/images/animal-card/strelitzia-small.png);
+      position: absolute;
+      bottom: -5px;
+      right: 0;
+      z-index: 1;
+    }
+    .pet-btn{
+      width: 100%;
+    margin-top: -3rem;
+    left: 0;
+    }
+    .testimonial-btn{
+    margin-left: -4rem;
+    }
+    .logo__link h1 {
+      font-size: 0.7rem;
+      max-width: 50px
+    ;
+      font-weight: 400;
+      color: var(--light-color);
+      margin: 3.55px 4.75px;
+      cursor: pointer;
+    }
+    .header__logo{
+    margin-left: 3rem;
+    }
+    }
+    @media screen and (max-width: 425px){
+      .container{
+        width: 400px;
+      }
+      .hero__content h2 {
+        margin-top: 70px;
+        font-size: 4rem;
+        text-align: center;
+
+      }
+      .hero__content h2::before{
+    right: 40px;
+      }
+      .footer__button{
+        width: 100%;
+        left: 0;
+      }
+      .testimonials__content{
+        width: 100%;
+      }
+      .testimonial-btn{
+        margin-left: -4.5rem;
+        }
+        .testimonials__teastimonial p{
+       text-overflow: ellipsis;
+        }
+        .testimonials__teastimonial .lastp {
+        display: none;
+        }
+        .backstage h2{
+          font-size: 24px;
+        }
+        .footer__icons a{
+        left: 2%;
+        font-size: 0.7rem;
+        }
+      }
+      @media screen and (max-width: 402px){
+        .container{
+          width: 370px;
+        }
+        .watch-btn{
+          left:15%;
+        }
+        .footer__icons{
+          right: 15px;
+        }
+      }
+        @media screen and (max-width: 375px){
+          .container{
+            width: 340px;
+          }
+          .footer__icons{
+            right: 10px;
+          }
+          .footer__icons a{
+            font-size: 10px;
+          }
+        }
+        @media screen and (max-width: 365px){
+    .container{
+      width: 320px;
+    }
+        }
+        @media screen and (max-width: 355px){
+          .container{
+            width: 320px;
+          }
+          .hero__content h2{
+            left: 10%;
+          }
+          .hero__content h2::before{
+            right: 35px;
+              }
+              .watch-btn{
+                  left:10%;
+              }
+              .footer__navlist{
+                gap: 40px;
+              }
+              }
+              @media screen and (max-width: 320px){
+                .container{
+                  width: 300px;
+                }
+                .footer__navlist{
+                  gap: 40px;
+                }
+                .testimonial-btn{
+                  margin-left:-5.5rem;
+                }
+                .testimonials{
+                  padding-top: 12rem;
+                }
+                .testimonials h3{
+                  padding:0 0 2rem 0;
+                }
+                .hero__content h2{
+                  left: 15%;
+                }
+                .hero__content h2::before{
+                  right: 45px;
+                    }
+                    .watch-btn{
+                  width: 200px;
+                  }
+              }
