@@ -5,3 +5,5 @@
 link to online-zoo task week 2: https://guliaisaeva.github.io/online-zoo/pages/donate/donate.html
 
  link to online-zoo task week 3: https://guliaisaeva.github.io/online-zoo/pages/main/index.html
+
+  link to online-zoo task week 4: https://guliaisaeva.github.io/online-zoo/pages/main/index.html
