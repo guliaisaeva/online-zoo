@@ -40,6 +40,12 @@ html {
     max-width: 1160px;
     margin: 0 auto;
  }
+main.active{
+filter:blur(1.5rem) brightness(0.1);
+ }
+footer.active{
+  filter:blur(1.5rem) brightness(0.1);
+}
  h2{
 font-weight: 400;
 font-size: 48px;
@@ -185,6 +191,7 @@ cursor: pointer;
   gap: 63px;
 }
 .header__menu{
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,6 +217,16 @@ color: var(--accent-color);
 #burger-menu{
   display: none;
 }
+.close-icon{
+ color: rgb(135, 34, 34);
+ position: absolute;
+ right: 10%;
+ top: 200px;
+ z-index: 105;
+font-size: 24px;
+display: none;
+}
+
 /*---------------- HERO SECTION----------------- */
    .hero{
     margin-top: -80px;
@@ -310,110 +327,133 @@ color: var(--accent-color);
       font-weight: 400;
     }
     /*---------------------- PET SECTION -------------------------*/
-   .pets{
-    height: 100%;
-    background-color: var(--light-bg-color);
-    position: relative;
-    }
-   .animal-cards__content{
+    .pets{
       height: 100%;
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      justify-content: center;
-      align-items: center;
-      grid-row-gap: 20px;
-      grid-column-gap: 30px;
-    }
-    .animal-cards__content figcaption{
-      min-height: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 10px;
-      font-weight: 300;
-      font-size: 15px;
-      line-height: 120%;
-      color: var(--dark-color);
-    }
-    /* border liner gradinet */
-    .animal-cards__card{
-    background:linear-gradient(#fff,#fff) padding-box,
-    linear-gradient(to right,#FA6F32,#FE9013) border-box;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    cursor: pointer;
-    position: relative;
-    }
-    .animal-cards__card:hover figcaption {
-    background: rgba(239, 235, 234, 0.74);
-    width: 100%;
-    height: 350px;
-    transition: all ease-in-out 1s;
-    position: absolute;
-    left: 0;
-    top: 0;
-    border: 1px solid  white;
-    border-radius: 50%;
-    align-items: center;
-    }
-    .animal-cards__card:hover img{
-    transition: all ease-in-out 1s;
-    }
-    .animal-cards__card img{
-      border-radius: 5px;
-      width: 100%;
-    }
-    .animal-cards__content{
+      background-color: var(--light-bg-color);
       position: relative;
-      z-index: 5;
-    }
-    .slider-btns{
+      }
+
+     .animal-cards__content{
+         /* height: 450px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 20px;
+        grid-column-gap: 30px;
+        overflow: hidden;
+        position: relative;
+        z-index: 5; */
+        max-width:100%;
+        height: auto;
+        position: relative;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 20px;
+        grid-column-gap: 30px;
+        overflow: hidden;
+
+      }
+
+      /* .animal-cards__slider{
+        max-width:100%;
+        position: relative;
+        margin: auto;
+
+
+      } */
+      .animal-cards__content figcaption{
+        min-height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 120%;
+        color: var(--dark-color);
+      }
+      /* border liner gradinet */
+      .animal-cards__card{
+      background:linear-gradient(#fff,#fff) padding-box,
+      linear-gradient(to right,#FA6F32,#FE9013) border-box;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      cursor: pointer;
+      position: relative;
+      display: none;
+      }
+      .animal-cards__card:hover figcaption {
+      background: rgba(239, 235, 234, 0.74);
       width: 100%;
-      display: flex;
-      justify-content: space-between;
-    }
-    .animal-cards__slider-arrow {
-      position: absolute;
-      width: 62px;
-      height: 62px;
-      background-color: var(--accent-color);
-      border-radius: 50%;
-      background-position: center;
-      background-repeat: no-repeat;
-      border: none;
-      z-index: 15;
-    }
-    .prev {
-      top: 37%;
-      left: 0.5rem;
-      z-index: 100;
-    }
-    .next {
-      top: 37%;
-      right: 0.5rem;
-      z-index: 100;
-    }
-    .arrow-active:active {
-      background-color: var(--btn--active-color);
-    }
-    .animal-cards__button{
-    text-align: center;
-    padding: 80px 0 100px 0;
-    }
-    .pets::before{
-      content: url(../../assets/images/animal-card/palm_foto.png);
+      height: 350px;
+      transition: all ease-in-out 1s;
       position: absolute;
       left: 0;
-      bottom: -4px;
-      z-index: 1;
-    }
-    .pets::after{
-      content: url(../../assets/images/animal-card/strelitzia-flower1.png);
-      position: absolute;
-      bottom: -4px;
-      right: 0;
-      z-index: 1;
-    }
+      top: 0;
+      border: 1px solid  white;
+      border-radius: 50%;
+      align-items: center;
+      }
+
+      .animal-cards__card:hover img{
+      transition: all ease-in-out 1s;
+      }
+      .animal-cards__card img{
+        border-radius: 5px;
+        width: 100%;
+      }
+
+      .slider-btns{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .animal-cards__slider-arrow {
+        position: absolute;
+        width: 62px;
+        height: 62px;
+        background-color: var(--accent-color);
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+        z-index: 15;
+      }
+      .prev {
+        top: 37%;
+        left: 0.5rem;
+        z-index: 100;
+      }
+      .next {
+        top: 37%;
+        right: 0.5rem;
+        z-index: 100;
+      }
+      .arrow-active:active {
+        background-color: var(--btn--active-color);
+      }
+      .animal-cards__button{
+      text-align: center;
+      padding: 80px 0 100px 0;
+      }
+      .pets::before{
+        content: url(../../assets/images/animal-card/palm_foto.png);
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        z-index: 1;
+      }
+      .pets::after{
+        content: url(../../assets/images/animal-card/strelitzia-flower1.png);
+        position: absolute;
+        bottom: -4px;
+        right: 0;
+        z-index: 1;
+      }
     /*------------------- SECTION PICK AND FEED ---------------------------------*/
     .pick-and-feed{
       height: 1004px;
@@ -538,6 +578,20 @@ color: var(--accent-color);
     position: relative;
     z-index: 5;
   }
+  .page-mask{
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(36, 34, 34, 0.6);
+    z-index: -1;
+    display: none;
+  }
+  .page-mask.active{
+    display: block;
+  }
   .testimonials::after{
     content: url(../../assets/images/testimonial-footer/leav_foto.png);
     position: absolute;
@@ -556,6 +610,7 @@ color: var(--accent-color);
     margin-top: 38px;
   }
   .testimonials__cards{
+    overflow: hidden;
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -571,7 +626,10 @@ color: var(--accent-color);
     linear-gradient(to left,rgba(254, 189, 171, 0.74) 74%,rgba(243, 169, 248, 0.66) 66%,rgba(224, 216, 240, 1)100%,rgba(234, 247, 254, 1) 100%,rgba(234, 247, 254, 1)100%) border-box;
     border: 2px solid transparent;
     margin: 47px 0 21px 0;
+    position: relative;
+    z-index: 1;
   }
+
   .testimonials__card:hover{
     border: 4px solid transparent;
   }
@@ -612,9 +670,36 @@ color: var(--accent-color);
   }
   .testimonial__button{
   align-self: flex-start;
-margin-top: 3rem;
+  margin-top: 3rem;
   }
-  .range{
+   .modal{
+    padding: 0 2rem;
+    width: 330px;
+    height: 430px;
+    position: absolute;
+    background-color: white;
+    position: absolute;
+    z-index:200;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+  }
+ .modal.active{
+     display: block; }
+
+  .popup-xmark{
+    position: absolute;
+    right: 4%;
+    top: 3%;
+    color: #E47209;
+    z-index: 105;
+    font-size: 1.5rem;
+  }
+  .popup{
+margin-top:0.9rem;
+  }
+  /* .range{
     height: 8px;
     width: 600px;
     background-color:
@@ -625,9 +710,9 @@ margin-top: 3rem;
     border: 0.5px solid transparent;
     border-radius: 5px;
     margin: 2rem 0;
-  }
-  input[type=range]{
-    -webkit-appearance: none;
+  } */
+  /* input[type=range]{ */
+    /* -webkit-appearance: none;
     border-radius: 5px;
     width: 115.19px;
     height: 6px;
@@ -635,13 +720,51 @@ margin-top: 3rem;
     position: absolute;
     left: 0;
     top: 0;
-    cursor: pointer;
-  }
-  input[type=range]:hover {
+    cursor: pointer; */
+    /* display: block;
+    -webkit-appearance: none;
+    background-color: #bdc3c7;
+    width: 300px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    outline: 0;
+  } */
+  /* input[type=range]:hover {
   width:20px;
-  }
-  input[type=range]::-webkit-slider-thumb {
+  } */
+  /* input[type=range]::-webkit-slider-thumb {
     display: none;
+  } */
+  /* ----------------------------------------2version----------- */
+  .media-scroller{
+    width: 1100px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+    overflow-x: auto;
+    overscroll-behavior-inline:contain;
+  }
+  .snap-inline{
+  scroll-snap-type:inline mandatory;
+  scroll-padding-inline: 1rem;
+  }
+  .snap-inline>*{
+    scroll-snap-align: start;
+  }
+  ::-webkit-scrollbar{
+    width: 4px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track{
+    width: 100px;
+    background: grey;
+    margin-block: 0.4em;
+    border-radius:100vw;
+  }
+  ::-webkit-scrollbar-thumb{
+    border-radius:100vw;
+    background: orange;
   }
   /*--------------- FOOTER---------------- */
 .footer{
@@ -888,7 +1011,11 @@ padding: 6px 5px;
       .container{
         width: 1160px;
         margin: 0 auto;
-     }}
+     }
+    .modal{
+      opacity: 0;
+    }
+    }
      @media screen and (max-width:1314px) {
       .container{
         width: 1100px;
@@ -929,12 +1056,44 @@ padding: 6px 5px;
         width: 950px;
         margin: 0 auto;
      }
-     .last{
+     /* .last{
       display: none;
      }
      .testimonials__cards{
       gap: 30px;
-    }}
+    } */
+    .media-scroller{
+      width: 850px;
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns:33%;
+      overflow-x: auto;
+      overscroll-behavior-inline:contain;
+      place-items: center;
+    }
+    .snap-inline{
+      scroll-snap-type:inline mandatory;
+      scroll-padding-inline: 1rem;
+      }
+      .snap-inline>*{
+        scroll-snap-align: start;
+      }
+      ::-webkit-scrollbar{
+        width: 4px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track{
+        width: 70px;
+        background: grey;
+        margin-block: 0.4em;
+        border-radius:100vw;
+      }
+      ::-webkit-scrollbar-thumb{
+        border-radius:100vw;
+        background: orange;
+      }
+
+  }
 
     @media screen and (max-width:1085px){
       .container{
@@ -943,6 +1102,7 @@ padding: 6px 5px;
      .animal-cards__content {
       grid-row-gap: 90px;
   }
+
     }
   /* 1000px */
     @media screen and (max-width:1000px) {
@@ -1160,6 +1320,25 @@ height: 300px;
 .footer-nav-link{
   color: #fff;
   }
+  .testimonials__cards{
+    width: 100%;
+  }
+  .testimonials__card{
+    width: 100%;
+  }
+  .media-scroller{
+ display: flex;
+ flex-direction: column;
+  }
+.last{
+  display: none;
+}
+.modal{
+  opacity: 1;
+  z-index: 500;
+}
+
+
 }
 @media screen and (max-width: 800px){
   .container{
@@ -1202,6 +1381,9 @@ height: 300px;
 }
 /*-------------- Tablet size------------------ */
 @media screen and (max-width: 768px){
+  body{
+    width: 100vw;
+  }
   .container{
     max-width: 620px;
   }
@@ -1219,7 +1401,7 @@ height: 300px;
   }
 
   .display {
-  width: 100%;
+  width: 100vw;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -1227,15 +1409,19 @@ height: 300px;
  left:0;
  top: 70px;
 background-color: white;
-padding: 40px 50%;
+padding: 40px 60px;
 display: none;
-text-align: center;
+text-align: left;
 z-index: 101;
 }
+
 .display.active{
   display: block;
-
 }
+.close-icon.active{
+  display: block;
+}
+
 .display a{
   color: #000;
   width: 500px;
@@ -1267,11 +1453,13 @@ display: none;
     z-index: 1;
     top: 10%;
 }
- .tablet{
+.tablet{
   display: none;
 }
 .animal-cards__content{
+  height: 800px;
   grid-template-columns: repeat(2,1fr);
+
 }
 .animal-cards__slider-arrow {
   position: absolute;
@@ -1292,10 +1480,9 @@ display: none;
   font-size: 14px;
 }
 .prev,.next{
-  top: 36%;
-
+  top: 35%;
 }
-.testimonials{
+/* .testimonials{
  padding-top: 15rem;
 height: 100%;
 }
@@ -1315,16 +1502,16 @@ height: 100%;
 }
 .range{
   display: none;
-}
+} */
 .testimonial__button {
  position: relative;
 left: 30%;
 margin: 1rem 0;
 }
-.testimonials__content{
+/* .testimonials__content{
 height: 680px;
 padding: 0 0 20rem 0;
-}
+} */
 .testimonials__content h3{
   font-size: 30px;
 }
@@ -1384,10 +1571,10 @@ left: -120px;
   .container{
     max-width: 500px;
   }
-.testimonials{
+/* .testimonials{
   padding-top:
     17rem;
-}
+} */
 .testimonials__content h3{
   padding-bottom: 1rem;
 }
@@ -1555,7 +1742,7 @@ right: 40px;
     width: 100%;
     left: 0;
   }
-  .testimonials__content{
+  /* .testimonials__content{
     width: 100%;
   }
   .testimonial-btn{
@@ -1566,7 +1753,7 @@ right: 40px;
     }
     .testimonials__teastimonial .lastp {
     display: none;
-    }
+    } */
     .backstage h2{
       font-size: 24px;
     }
@@ -1587,6 +1774,9 @@ right: 40px;
     }
   }
     @media screen and (max-width: 375px){
+      body{
+        width: 100vw;
+      }
       .container{
         width: 340px;
       }
@@ -1600,6 +1790,20 @@ right: 40px;
     @media screen and (max-width: 365px){
 .container{
   width: 320px;
+}
+.modal{
+  /* padding: 0 2rem; */
+  width: 300px;
+  height: 420px;
+  position: absolute;
+  background-color: white;
+  position: absolute;
+  z-index:200;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+
 }
     }
     @media screen and (max-width: 355px){
@@ -1629,12 +1833,12 @@ right: 40px;
             .testimonial-btn{
               margin-left:-5.5rem;
             }
-            .testimonials{
+            /* .testimonials{
               padding-top: 12rem;
-            }
-            .testimonials h3{
+            } */
+            /* .testimonials h3{
               padding:0 0 2rem 0;
-            }
+            } */
             .hero__content h2{
               left: 15%;
             }

@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Zoo</title>
+    <!-- link to font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- link to normalize css -->
     <link rel="stylesheet" href="../../assets/styles/normalize.css">
     <!-- link to css styles -->
@@ -37,6 +41,7 @@
                                     target="_blank">Donate</a></li>
                             <li><a class="header__link nav__link" href="#contact">Contact us</a></li>
                         </ul>
+                        <i class="fa-solid fa-xmark close-icon"></i>
                     </nav>
                     <!-- burger menu -->
 
@@ -48,6 +53,8 @@
                 <div id="burger-menu">
                     <img src="../../assets/icons/header-hero/burger_menu.svg" alt="burger menu">
                 </div>
+
+
             </div>
         </div>
     </header>
@@ -93,13 +100,107 @@
         <!-- PETS SECTION -->
         <div class="animal-cards pets">
             <div class="container">
+                <button class="animal-cards__slider-arrow prev" id="prev" onclick="plusSlides(-6)"><img
+                        src="../../assets/icons/pets/nextArrow.svg" alt="arrow icon"></button>
+                <button class="animal-cards__slider-arrow next" id="next" onclick="plusSlides(6)"><img
+                        src="../../assets/icons/pets/prevArrow.svg" alt="arrow icon">
+                </button>
                 <div class="animal-cards__slider">
-                    <button class="animal-cards__slider-arrow prev" id="prev"><img
-                            src="../../assets/icons/pets/nextArrow.svg" alt="arrow icon"></button>
-                    <button class="animal-cards__slider-arrow next" id="next"><img
-                            src="../../assets/icons/pets/prevArrow.svg" alt="arrow icon"></button>
-                    <div class="animal-cards__content">
+                    <div class="animal-cards__content  ">
+                        <figure class="animal-cards__card fade tablet">
+                            <img style="border-radius:5px;" src="../../assets/images/animal-card/panda1.jpg"
+                                alt="panda">
+                            <figcaption>
+                                <div class="animal-cards__title-subtitle">
+                                    <h4>Giant Pandas</h4>
+                                    <p>Native to Southwest China</p>
+                                </div>
+                                <div class="animal-cards__icon">
+                                    <img src="../../assets/icons/pets/banana-bamboo_icon.svg" alt="banana-bamboo icon">
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="animal-cards__card fade">
+                            <img style="border-radius:5px;" src="../../assets/images/animal-card/eagle2.jpg"
+                                alt="eagle">
+                            <figcaption class="animal-cards__items">
+                                <div class="animal-cards__title-subtitle">
+                                    <h4>Eagles</h4>
+                                    <p>Native to South America</p>
+                                </div>
+                                <div class="animal-cards__icon">
+                                    <img src="../../assets/icons/pets/meet-fish_icon.svg" alt="meet-fish icon">
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="animal-cards__card fade">
+                            <img style="border-radius:5px;" src="../../assets/images/animal-card/gorilla3.jpg"
+                                alt="gorilla">
+                            <figcaption class="animal-cards__items">
+                                <div class="animal-cards__title-subtitle">
+                                    <h4>Gorillas</h4>
+                                    <p>Native to Congo</p>
+                                </div>
+                                <div class="animal-cards__icon">
+                                    <img src="../../assets/icons/pets/banana-bamboo_icon.svg" alt="banana-bamboo icon">
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="animal-cards__card fade">
+                            <img style="border-radius:5px;" src="../../assets/images/animal-card/sloth4.jpg"
+                                alt="two-toed sloth4">
+                            <figcaption>
+                                <div class="animal-cards__title-subtitle">
+                                    <h4>Two-Toed Sloth</h4>
+                                    <p>Mesoamerica,South America</p>
+                                </div>
+                                <div class="animal-cards__icon">
+                                    <img src="../../assets/icons/pets/banana-bamboo_icon.svg" alt="banana-bamboo icon">
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="animal-cards__card fade ">
+                            <img style="border-radius:5px;" src="../../assets/images/animal-card/cheetas5.jpg"
+                                alt="cheetas">
+                            <figcaption class="animal-cards__items">
+                                <div class="animal-cards__title-subtitle">
+                                    <h4>Cheetahs</h4>
+                                    <p>Native to Africa</p>
+                                </div>
+                                <div class="animal-cards__icon">
+                                    <img src="../../assets/icons/pets/meet-fish_icon.svg" alt="meet-fish icon">
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="animal-cards__card tablet fade">
+                            <img style="border-radius:5px;" src="../../assets/images/animal-card/penguins6.jpg"
+                                alt="penguins">
+                            <figcaption class="animal-cards__items">
+                                <div class="animal-cards__title-subtitle">
+                                    <h4>Penguins</h4>
+                                    <p>Native to America</p>
+                                </div>
+                                <div class="animal-cards__icon">
+                                    <img src="../../assets/icons/pets/meet-fish_icon.svg" alt="meet-fish icon">
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="animal-cards__card fade tablet">
+                            <img style="border-radius:5px;" src="../../assets/images/animal-card/panda1.jpg"
+                                alt="panda">
+                            <figcaption>
+                                <div class="animal-cards__title-subtitle">
+                                    <h4>Giant Pandas</h4>
+                                    <p>Native to Southwest China</p>
+                                </div>
+                                <div class="animal-cards__icon">
+                                    <img src="../../assets/icons/pets/banana-bamboo_icon.svg" alt="banana-bamboo icon">
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
 
+                    <!-- <div class="animal-cards__content ">
                         <figure class="animal-cards__card tablet">
                             <img style="border-radius:5px;" src="../../assets/images/animal-card/panda1.jpg"
                                 alt="panda">
@@ -178,9 +279,13 @@
                                 </div>
                             </figcaption>
                         </figure>
-                    </div>
-                    <div class="button button-slider prev"></div>
-                    <div class="button button-slider next"></div>
+
+                    </div> -->
+
+
+
+                    <!-- <div class="button button-slider prev"></div>
+                    <div class="button button-slider next"></div> -->
                 </div>
                 <div class="animal-cards__button btn">
                     <button class="button pet-btn rounded_btn">Choose Your Favorite</button>
@@ -247,104 +352,345 @@
             <div class="container">
                 <div class="testimonials__content">
                     <h3>Testimonials</h3>
-                    <div class="testimonials__cards">
-                        <div class="testimonials__card">
-                            <figure class="testimonials__header">
-                                <img src="../../assets/icons/testimon-footer/user_icon.svg" alt="user icon">
-                                <figcaption>
-                                    <p class="user_name">Michael John</p>
-                                    <div class="user_info">
-                                        <p class="user_data">Local Austria</p>
-                                        <p class="user_data"> &middot; Today</p>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <div class="testimonials__teastimonial">
-                                <p>The best online zoo I’ve met. My son delighted very much
-                                    ljves to watch gouillas. Online zoo is one jf the ways to
-                                    instill a love for animals.The best online zoo I’ve met. My
-                                    son delighted very much ljves to watch gouillas. Online zoo
-                                    is one jf the ways to instill a love for animals.</p>
-                                <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to watch
-                                    gouillas.
-                                    Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve
-                                    met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the
-                                    ways to instill a love for </p>
+                    <div class="testimonials__cards popup-cards">
+                        <div class="media-scroller snap-inline">
+                            <div class="testimonials__card last">
+                                <figure class="testimonials__header">
+                                    <img src="../../assets/icons/testimon-footer/user_icon.svg" alt="user icon">
+                                    <figcaption>
+                                        <p class="user_name">Michael John</p>
+                                        <div class="user_info">
+                                            <p class="user_data">Local Austria</p>
+                                            <p class="user_data"> &middot; Today</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <div class="testimonials__teastimonial">
+                                    <p>The best online zoo I’ve met. My son delighted very much
+                                        ljves to watch gouillas. Online zoo is one jf the ways to
+                                        instill a love for animals.The best online zoo I’ve met. My
+                                        son delighted very much ljves to watch gouillas. Online zoo
+                                        is one jf the ways to instill a love for animals.</p>
+                                    <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to
+                                        watch
+                                        gouillas.
+                                        Online zoo is one jf the ways to instill a love for animals.The best online zoo
+                                        I’ve
+                                        met. My son delighted very much ljves to watch gouillas. Online zoo is one jf
+                                        the
+                                        ways to instill a love for </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="testimonials__card first">
-                            <figure class="testimonials__header">
-                                <img src="../../assets/images/testimonial-footer/user2.png" alt="user icon">
-                                <figcaption>
-                                    <p class="user_name">Oskar Samborsky</p>
-                                    <div class="user_info">
-                                        <p class="user_data">Local Austria</p>
-                                        <p class="user_data"> &middot; Yesterday</p>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <div class="testimonials__teastimonial">
-                                <p>Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve
-                                    met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the
-                                    ways to instill a love for animals.The best online zoo I’ve met. My son delighted
-                                    very much ljves to watch gouillas.</p>
-                                <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to watch
-                                    gouillas.
-                                    Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve
-                                    met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the
-                                    ways to instill a love for </p>
+                            <div class="testimonials__card last">
+                                <figure class="testimonials__header">
+                                    <img src="../../assets/images/testimonial-footer/user2.png" alt="user icon">
+                                    <figcaption>
+                                        <p class="user_name">Oskar Samborsky</p>
+                                        <div class="user_info">
+                                            <p class="user_data">Local Austria</p>
+                                            <p class="user_data"> &middot; Yesterday</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <div class="testimonials__teastimonial">
+                                    <p>Online zoo is one jf the ways to instill a love for animals.The best online zoo
+                                        I’ve
+                                        met. My son delighted very much ljves to watch gouillas. Online zoo is one jf
+                                        the
+                                        ways to instill a love for animals.The best online zoo I’ve met. My son
+                                        delighted
+                                        very much ljves to watch gouillas.</p>
+                                    <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to
+                                        watch
+                                        gouillas.
+                                        Online zoo is one jf the ways to instill a love for animals.The best online zoo
+                                        I’ve
+                                        met. My son delighted very much ljves to watch gouillas. Online zoo is one jf
+                                        the
+                                        ways to instill a love for </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="testimonials__card">
-                            <figure class="testimonials__header">
-                                <img src="../../assets/images/testimonial-footer/user3.png" alt="user icon">
-                                <figcaption>
-                                    <p class="user_name">Fredericka Michelin</p>
-                                    <div class="user_info">
-                                        <p class="user_data">Local Austria</p>
-                                        <p class="user_data"> &middot; Yesterday</p>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <div class="testimonials__teastimonial">
-                                <p>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
-                                    Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve
-                                    met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the
-                                    ways to instill a love for animals.</p>
-                                <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to watch
-                                    gouillas.
-                                    Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve
-                                    met.</p>
-                                <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to </p>
+                            <div class="testimonials__card">
+                                <figure class="testimonials__header">
+                                    <img src="../../assets/images/testimonial-footer/user2.png" alt="user icon">
+                                    <figcaption>
+                                        <p class="user_name">Fredericka Michelin</p>
+                                        <div class="user_info">
+                                            <p class="user_data">Local Austria</p>
+                                            <p class="user_data"> &middot; Yesterday</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <div class="testimonials__teastimonial">
+                                    <p>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                                        Online zoo is one jf the ways to instill a love for animals.The best online zoo
+                                        I’ve
+                                        met. My son delighted very much ljves to watch gouillas. Online zoo is one jf
+                                        the
+                                        ways to instill a love for animals.</p>
+                                    <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to
+                                        watch
+                                        gouillas.
+                                        Online zoo is one jf the ways to instill a love for animals.The best online zoo
+                                        I’ve
+                                        met.</p>
+                                    <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="testimonials__card last">
-                            <figure class="testimonials__header">
-                                <img src="../../assets/images/testimonial-footer/user4.png" alt="user icon">
-                                <figcaption>
-                                    <p class="user_name">Mila Riksha</p>
-                                    <div class="user_info">
-                                        <p class="user_data">Local Austria</p>
-                                        <p class="user_data"> &middot; Yesterday</p>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <div class="testimonials__teastimonial">
-                                <p class="lastp">My son delighted very much ljves to watch gouillas. Online zoo is one
-                                    jf the ways to
-                                    instill a love for animals.The best online zoo I’ve met. My son delighted very much
-                                    ljves to watch gouillas. Online zoo is one jf the ways to instill a love for
-                                    animals.The best online zoo I’ve met. My son delighted very much ljves to watch
-                                    gouillas. Online zoo is one jf the ways to instill a love for animals.The best
-                                    online zoo I’ve met. My son delighted very much ljves to watch gouillas.</p>
-                                <p>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
-                                    Online zoo is one jf</p>
+                            <div class="modal"></div>
+                            <div class="testimonials__card last">
+                                <figure class="testimonials__header">
+                                    <img src="../../assets/images/testimonial-footer/user4.png" alt="user icon">
+                                    <figcaption>
+                                        <p class="user_name">Mila Riksha</p>
+                                        <div class="user_info">
+                                            <p class="user_data">Local Austria</p>
+                                            <p class="user_data"> &middot; Yesterday</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <div class="testimonials__teastimonial">
+                                    <p class="lastp">My son delighted very much ljves to watch gouillas. Online zoo is
+                                        one
+                                        jf the ways to
+                                        instill a love for animals.The best online zoo I’ve met. My son delighted very
+                                        much
+                                        ljves to watch gouillas. Online zoo is one jf the ways to instill a love for
+                                        animals.The best online zoo I’ve met. My son delighted very much ljves to watch
+                                        gouillas. Online zoo is one jf the ways to instill a love for animals.The best
+                                        online zoo I’ve met. My son delighted very much ljves to watch gouillas.</p>
+                                    <p>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                                        Online zoo is one jf</p>
+                                </div>
+                            </div>
+                            <div class="testimonials__card last">
+                                <figure class="testimonials__header">
+                                    <img src="../../assets/icons/testimon-footer/user_icon.svg" alt="user icon">
+                                    <figcaption>
+                                        <p class="user_name">Michael John</p>
+                                        <div class="user_info">
+                                            <p class="user_data">Local Austria</p>
+                                            <p class="user_data"> &middot; Today</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <div class="testimonials__teastimonial">
+                                    <p>The best online zoo I’ve met. My son delighted very much
+                                        ljves to watch gouillas. Online zoo is one jf the ways to
+                                        instill a love for animals.The best online zoo I’ve met. My
+                                        son delighted very much ljves to watch gouillas. Online zoo
+                                        is one jf the ways to instill a love for animals.</p>
+                                    <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to
+                                        watch
+                                        gouillas.
+                                        Online zoo is one jf the ways to instill a love for animals.The best online zoo
+                                        I’ve
+                                        met. My son delighted very much ljves to watch gouillas. Online zoo is one jf
+                                        the
+                                        ways to instill a love for </p>
+                                </div>
+                            </div>
+                            <div class="testimonials__card last">
+                                <figure class="testimonials__header">
+                                    <img src="../../assets/images/testimonial-footer/user2.png" alt="user icon">
+                                    <figcaption>
+                                        <p class="user_name">Oskar Samborsky</p>
+                                        <div class="user_info">
+                                            <p class="user_data">Local Austria</p>
+                                            <p class="user_data"> &middot; Yesterday</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <div class="testimonials__teastimonial">
+                                    <p>Online zoo is one jf the ways to instill a love for animals.The best online zoo
+                                        I’ve
+                                        met. My son delighted very much ljves to watch gouillas. Online zoo is one jf
+                                        the
+                                        ways to instill a love for animals.The best online zoo I’ve met. My son
+                                        delighted
+                                        very much ljves to watch gouillas.</p>
+                                    <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to
+                                        watch
+                                        gouillas.
+                                        Online zoo is one jf the ways to instill a love for animals.The best online zoo
+                                        I’ve
+                                        met. My son delighted very much ljves to watch gouillas. Online zoo is one jf
+                                        the
+                                        ways to instill a love for </p>
+                                </div>
+                            </div>
+                            <div class="testimonials__card">
+                                <figure class="testimonials__header">
+                                    <img src="../../assets/images/testimonial-footer/user3.png" alt="user icon">
+                                    <figcaption>
+                                        <p class="user_name">Fredericka Michelin</p>
+                                        <div class="user_info">
+                                            <p class="user_data">Local Austria</p>
+                                            <p class="user_data"> &middot; Yesterday</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <div class="testimonials__teastimonial">
+                                    <p>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                                        Online zoo is one jf the ways to instill a love for animals.The best online zoo
+                                        I’ve
+                                        met. My son delighted very much ljves to watch gouillas. Online zoo is one jf
+                                        the
+                                        ways to instill a love for animals.</p>
+                                    <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to
+                                        watch
+                                        gouillas.
+                                        Online zoo is one jf the ways to instill a love for animals.The best online zoo
+                                        I’ve
+                                        met.</p>
+                                    <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to
+                                    </p>
+                                </div>
+
+                            </div>
+                            <!-- <div class="modal"></div> -->
+                            <div class="testimonials__card last">
+                                <figure class="testimonials__header">
+                                    <img src="../../assets/images/testimonial-footer/user4.png" alt="user icon">
+                                    <figcaption>
+                                        <p class="user_name">Mila Riksha</p>
+                                        <div class="user_info">
+                                            <p class="user_data">Local Austria</p>
+                                            <p class="user_data"> &middot; Yesterday</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <div class="testimonials__teastimonial">
+                                    <p class="lastp">My son delighted very much ljves to watch gouillas. Online zoo is
+                                        one
+                                        jf the ways to
+                                        instill a love for animals.The best online zoo I’ve met. My son delighted very
+                                        much
+                                        ljves to watch gouillas. Online zoo is one jf the ways to instill a love for
+                                        animals.The best online zoo I’ve met. My son delighted very much ljves to watch
+                                        gouillas. Online zoo is one jf the ways to instill a love for animals.The best
+                                        online zoo I’ve met. My son delighted very much ljves to watch gouillas.</p>
+                                    <p>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                                        Online zoo is one jf</p>
+                                </div>
+                            </div>
+                            <div class="testimonials__card">
+                                <figure class="testimonials__header">
+                                    <img src="../../assets/icons/testimon-footer/user_icon.svg" alt="user icon">
+                                    <figcaption>
+                                        <p class="user_name">Michael John</p>
+                                        <div class="user_info">
+                                            <p class="user_data">Local Austria</p>
+                                            <p class="user_data"> &middot; Today</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <div class="testimonials__teastimonial">
+                                    <p>The best online zoo I’ve met. My son delighted very much
+                                        ljves to watch gouillas. Online zoo is one jf the ways to
+                                        instill a love for animals.The best online zoo I’ve met. My
+                                        son delighted very much ljves to watch gouillas. Online zoo
+                                        is one jf the ways to instill a love for animals.</p>
+                                    <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to
+                                        watch
+                                        gouillas.
+                                        Online zoo is one jf the ways to instill a love for animals.The best online zoo
+                                        I’ve
+                                        met. My son delighted very much ljves to watch gouillas. Online zoo is one jf
+                                        the
+                                        ways to instill a love for </p>
+                                </div>
+                            </div>
+                            <!-- <div class="modal"></div> -->
+                            <div class="testimonials__card last">
+                                <figure class="testimonials__header">
+                                    <img src="../../assets/images/testimonial-footer/user2.png" alt="user icon">
+                                    <figcaption>
+                                        <p class="user_name">Oskar Samborsky</p>
+                                        <div class="user_info">
+                                            <p class="user_data">Local Austria</p>
+                                            <p class="user_data"> &middot; Yesterday</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <div class="testimonials__teastimonial last">
+                                    <p>Online zoo is one jf the ways to instill a love for animals.The best online zoo
+                                        I’ve
+                                        met. My son delighted very much ljves to watch gouillas. Online zoo is one jf
+                                        the
+                                        ways to instill a love for animals.The best online zoo I’ve met. My son
+                                        delighted
+                                        very much ljves to watch gouillas.</p>
+                                    <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to
+                                        watch
+                                        gouillas.
+                                        Online zoo is one jf the ways to instill a love for animals.The best online zoo
+                                        I’ve
+                                        met. My son delighted very much ljves to watch gouillas. Online zoo is one jf
+                                        the
+                                        ways to instill a love for </p>
+                                </div>
+                            </div>
+                            <div class="testimonials__card last">
+                                <figure class="testimonials__header">
+                                    <img src="../../assets/images/testimonial-footer/user3.png" alt="user icon">
+                                    <figcaption>
+                                        <p class="user_name">Fredericka Michelin</p>
+                                        <div class="user_info">
+                                            <p class="user_data">Local Austria</p>
+                                            <p class="user_data"> &middot; Yesterday</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <div class="testimonials__teastimonial last">
+                                    <p>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                                        Online zoo is one jf the ways to instill a love for animals.The best online zoo
+                                        I’ve
+                                        met. My son delighted very much ljves to watch gouillas. Online zoo is one jf
+                                        the
+                                        ways to instill a love for animals.</p>
+                                    <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to
+                                        watch
+                                        gouillas.
+                                        Online zoo is one jf the ways to instill a love for animals.The best online zoo
+                                        I’ve
+                                        met.</p>
+                                    <p class="lastp">The best online zoo I’ve met. My son delighted very much ljves to
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonials__card last">
+                                <figure class="testimonials__header">
+                                    <img src="../../assets/images/testimonial-footer/user4.png" alt="user icon">
+                                    <figcaption>
+                                        <p class="user_name">Mila Riksha</p>
+                                        <div class="user_info">
+                                            <p class="user_data">Local Austria</p>
+                                            <p class="user_data"> &middot; Yesterday</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <div class="testimonials__teastimonial last">
+                                    <p class="lastp">My son delighted very much ljves to watch gouillas. Online zoo is
+                                        one
+                                        jf the ways to
+                                        instill a love for animals.The best online zoo I’ve met. My son delighted very
+                                        much
+                                        ljves to watch gouillas. Online zoo is one jf the ways to instill a love for
+                                        animals.The best online zoo I’ve met. My son delighted very much ljves to watch
+                                        gouillas. Online zoo is one jf the ways to instill a love for animals.The best
+                                        online zoo I’ve met. My son delighted very much ljves to watch gouillas.</p>
+                                    <p>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                                        Online zoo is one jf</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="range">
+                    <div class="page-mask"></div>
+                    <!-- <div class="range">
                         <input type="range" class="input_range" min="0" max="10" step="1" value="0">
-                    </div>
+                    </div> -->
                     <div class="testimonial__button ">
                         <button class="testimonial-btn button square_btn">LEAVE FEEDBACK</button>
                     </div>

@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Zoo | Donate</title>
+    <!-- link to font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- link to normalize css -->
     <link rel="stylesheet" href="../../assets/styles/normalize.css">
     <!-- link to css styles -->
@@ -38,6 +42,7 @@
                                     target="_blank">Donate</a></li>
                             <li><a class="header__link nav__link" href="#contact">Contact us</a></li>
                         </ul>
+                        <i class="fa-solid fa-xmark close-icon"></i>
                     </nav>
                 </div>
                 <div class="nav__designer">
@@ -94,15 +99,15 @@
                                     <legend>Amount</legend>
                                     <div class="progress_bar__radios">
                                         <span class="progress_bar__radios-line"></span>
-                                        <label for="amount1" class="progress_bar__radio">
+                                        <label for="amount1" id="amount1" class="progress_bar__radio">
                                             <input type="radio" name="amount" id="amount1" class="amount" value="5000">
                                             &#36;5000
                                         </label>
-                                        <label for="amount2" class="progress_bar__radio">
+                                        <label for="amount2" id="amount2" class="progress_bar__radio">
                                             <input type="radio" name="amount" id="amount2" class="amount" value="2000">
                                             &#36;2000
                                         </label>
-                                        <label for="amount3" class="progress_bar__radio" style="color:#E47209">
+                                        <label for="amount3" id="amount3" class="progress_bar__radio ">
                                             <input type="radio" name="amount" id="amount3" class="amount" value="1000"
                                                 checked>
                                             &#36;1000
@@ -116,7 +121,8 @@
                                             &#36;250
                                         </label>
                                         <label for="amount6" class="progress_bar__radio">
-                                            <input type="radio" name="amount" id="amount6" class="amount" value="100">
+                                            <input type="radio" name="amount" id="amount6" class="amount" value="100"
+                                                checked>
                                             &#36;100
                                         </label>
                                         <label for="amount7" class="progress_bar__radio">
@@ -134,7 +140,7 @@
                         <div class="another-amount">
                             <form action="post">
                                 <div class="number"><input class="number-input" type="number"
-                                        onkeypress="if(this.value.length>3)return false" placeholder="Another amount">
+                                        onkeypress="if(this.value.length>3)return false" placeholder="100">
                                     <span class="dollar">&#36;</span>
                                 </div>
                                 <div class="radio-input">
