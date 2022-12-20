@@ -100,7 +100,6 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "block";
   }
-
   slides[slideIndex-1].style.display = "none";
 
 }

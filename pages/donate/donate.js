@@ -1,7 +1,6 @@
 const radio=document.querySelectorAll(".amount");
-console.log(radio)
 const label=document.querySelectorAll(".progress_bar__radio");
-console.log(label)
+
 
 
 // radio.forEach(element=>{
@@ -55,16 +54,10 @@ Array.from(barEl).forEach(element => {
        let value=e.target.value;
   amountEl.value=amountEl.textContent=value;
     })
+    amountEl.addEventListener("input",()=>{
+     if(element.value==amountEl.value){
+        element.checked=true;
+     }
+    })
 });
 
-amountEl.addEventListener("input",(e)=>{
-    Array.from(barEl).forEach(element => {
-        element.addEventListener("change",(e)=>{
-           let value=e.target.value;
-      amountEl.value=amountEl.textContent=value;
-
-    if(amountEl.value===value){
-       console.log("super")
-    }
-})})
-  })
